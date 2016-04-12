@@ -31,13 +31,6 @@
         <p>
             <asp:Button ID="adminButton" runat="server" Text="Administrator" Width="157px" PostBackUrl="~/Management/AdminPanel.aspx" />
         </p>
-        <div>
-    
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            <br />
-            <br />
-    
-    </div>
     </form>
 </body>
 </html>
