@@ -10,8 +10,7 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
-    <% Response.WriteFile("~/header.aspx");%>
-    <% Response.WriteFile("~/footer.html");%>
+    <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%>
     <form id="form1" runat="server">
         <p>
             Welcome to your client page</p>
@@ -20,16 +19,16 @@
             <asp:LoginStatus ID="LoginStatus1" runat="server" />
         </p>
         <p>
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ViewEdit.aspx">Contracts</asp:HyperLink>
+            <asp:HyperLink ID="ContractsLink" runat="server" NavigateUrl="~/ViewEdit.aspx">Contracts</asp:HyperLink>
         </p>
         <p>
-            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/MyProfile.aspx">View Profile</asp:HyperLink>
+            <asp:HyperLink ID="ViewProfileLink" runat="server" NavigateUrl="~/MyProfile.aspx">View Profile</asp:HyperLink>
         </p>
         <p>
-            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/SignUp.aspx">Create Profile</asp:HyperLink>
+            <asp:HyperLink ID="CreateProfileLink" runat="server" NavigateUrl="~/SignUp.aspx">Create Profile</asp:HyperLink>
         </p>
         <p>
-            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Management/AdminPanel.aspx">Adminstrator</asp:HyperLink>
+            <asp:HyperLink ID="AdminLink" runat="server" NavigateUrl="~/Management/AdminPanel.aspx">Adminstrator</asp:HyperLink>
         </p>
     </form>
 </body>

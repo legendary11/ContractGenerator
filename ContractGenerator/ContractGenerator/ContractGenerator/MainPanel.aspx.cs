@@ -22,10 +22,10 @@ namespace ContractGenerator
         {
             if (!User.Identity.IsAuthenticated)
             {
-                viewContractsButton.Visible = false;
-                viewProfieButton.Visible = false;
-                createEditButton.Visible = false;
-                adminButton.Visible = false;
+                ContractsLink.Visible = false;
+                ViewProfileLink.Visible = false;
+                CreateProfileLink.Visible = false;
+                AdminLink.Visible = false;
             }
 
         }
