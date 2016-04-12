@@ -20,16 +20,16 @@
             <asp:LoginStatus ID="LoginStatus1" runat="server" />
         </p>
         <p>
-            <asp:Button ID="viewContractsButton" runat="server" Text="View/Edit Contracts" Width="158px" PostBackUrl="~/ViewEdit.aspx" />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/ViewEdit.aspx">Contracts</asp:HyperLink>
         </p>
         <p>
-            <asp:Button ID="viewProfieButton" runat="server" PostBackUrl="~/MyProfile.aspx" Text="View Profile" Width="159px" />
+            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/MyProfile.aspx">View Profile</asp:HyperLink>
         </p>
         <p>
-            <asp:Button ID="createEditButton" runat="server" PostBackUrl="~/SignUp.aspx" Text="Create/Edit Profile" />
+            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/SignUp.aspx">Create Profile</asp:HyperLink>
         </p>
         <p>
-            <asp:Button ID="adminButton" runat="server" Text="Administrator" Width="157px" PostBackUrl="~/Management/AdminPanel.aspx" />
+            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Management/AdminPanel.aspx">Adminstrator</asp:HyperLink>
         </p>
     </form>
 </body>
