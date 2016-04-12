@@ -16,18 +16,12 @@
     <div>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx" Target="_parent">Home</asp:HyperLink>
         <h1>Login to your profile</h1>
-        <asp:Login ID="Login1" runat="server" CreateUserText="Sign up for a new account" CreateUserUrl="~/SignUp.aspx" DestinationPageUrl="~/MainPanel.aspx" OnAuthenticate="Login1_Authenticate" BackColor="#FFFBD6" BorderColor="#FFDFAD" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" TextLayout="TextOnTop">
-            <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
-            <LoginButtonStyle BackColor="White" BorderColor="#CC9966" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#990000" />
-            <TextBoxStyle Font-Size="0.8em" />
-            <TitleTextStyle BackColor="#990000" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+        <asp:Login ID="Login1" runat="server" CreateUserText="Sign up for a new account" CreateUserUrl="~/SignUp.aspx" DestinationPageUrl="~/MainPanel.aspx" OnAuthenticate="Login1_Authenticate">
         </asp:Login>
         <asp:LoginStatus ID="LoginStatus1" runat="server" />
         <br />
         <br />
-        <asp:PasswordRecovery ID="PasswordRecovery1" runat="server">
-            <MailDefinition Subject="Your New Password"></MailDefinition>
-        </asp:PasswordRecovery>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ForgotPassword.aspx">Forgot Password?</asp:HyperLink>
         <br />
     </div>
     </form>
