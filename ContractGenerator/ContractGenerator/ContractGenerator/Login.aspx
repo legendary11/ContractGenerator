@@ -84,10 +84,8 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td align="center">
-                                       <asp:HyperLink ID="CreateUserLink" runat="server" NavigateUrl="~/SignUp.aspx">Sign up for a new account</asp:HyperLink> 
-                                   </td>
-                                    <td align="center">
+                                   
+                                    <td colspan="2" align="center">
                                       <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/ForgotPassword.aspx">Forgot Password?</asp:HyperLink> 
                                    </td>
                                 </tr>

@@ -33,9 +33,9 @@ namespace HTMLtoPDF
             try
             {
                 //string strHtml = string.Empty;
-                string strHtml = "<html><head></head><body><p>This is a test</p></body></html>";
-                string pdfFileName = Request.PhysicalApplicationPath  + "Contract.pdf";
-
+                string strHtml = "<html><head></head><body> Website Development and Hosting Agreement</div>";
+                string pdfFileName = Request.PhysicalApplicationPath + "Contract.pdf";
+                
                 //StringWriter sw = new StringWriter();
                // HtmlTextWriter hw = new HtmlTextWriter(sw);
                // pdfTemplate.RenderControl(hw);
