@@ -14,9 +14,17 @@
         }
         .auto-style2 {
             height: 52px;
+            padding-left: 20px;
         }
         .auto-style3 {
             height: 48px;
+            padding-left: 20px;
+        }
+        .auto-style4 {
+            height: 80px;
+        }
+        .auto-style5 {
+           padding-right:10px;
         }
     </style>
 </head>
@@ -27,12 +35,12 @@
     <div class="userPrompt">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-7 col-md-offset-2">
+                <div class="col-md-7 col-md-offset-2p5">
                     <h1>Login to your profile</h1>
                 </div>
             </div>
         </div>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx" Target="_parent">Home</asp:HyperLink>
+       <!-- <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx" Target="_parent">Home</asp:HyperLink> -->
         <asp:Login ID="Login1" runat="server" CreateUserText="Sign up for a new account" CreateUserUrl="~/SignUp.aspx" DestinationPageUrl="~/MainPanel.aspx" OnAuthenticate="Login1_Authenticate" Width="348px">
             <LayoutTemplate>
                 <table cellpadding="1" cellspacing="0" style="border-collapse:collapse; width:168%; height: 207px;">
@@ -63,18 +71,18 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                     <td align="left">
+                                     <td align="left" class="auto-style4">
                                         <asp:CheckBox ID="RememberMe" runat="server" Text="Remember me next time." />
                                     </td>
-                                    <td align="right">
+                                    <td align="right" class="auto-style5">
                                         <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Log In" ValidationGroup="Login1" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>
+                                    <td align="center">
                                        <asp:HyperLink ID="CreateUserLink" runat="server" NavigateUrl="~/SignUp.aspx">Sign up for a new account</asp:HyperLink> 
                                    </td>
-                                    <td>
+                                    <td align="center">
                                       <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/ForgotPassword.aspx">Forgot Password?</asp:HyperLink> 
                                    </td>
                                 </tr>
