@@ -15,6 +15,7 @@
             <li><a href="/ViewEdit.aspx">View Contracts</a></li>
             <li><a href="#">Add Contracts*</a></li>
             <li><a href="#">Create New Contract**</a></li>	
+            <li><a href="/CreateContractSections.aspx">Create New Contract Sections**</a></li>
            <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>

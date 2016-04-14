@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -74,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bootstrap.css" />
+    <Content Include="CreateContractSections.aspx" />
     <Content Include="footer.html" />
     <Content Include="ForgotPassword.aspx" />
     <Content Include="header.aspx" />
@@ -104,6 +106,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BusLayer.cs" />
+    <Compile Include="CreateContractSections.aspx.cs">
+      <DependentUpon>CreateContractSections.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateContractSections.aspx.designer.cs">
+      <DependentUpon>CreateContractSections.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
