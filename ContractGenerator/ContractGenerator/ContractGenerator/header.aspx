@@ -47,7 +47,7 @@
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li class="divider"></li>
-            <li><a href="#">Logout</a></li>
+            <li><a href="javascript:__doPostBack('LoginStatus1$ctl00','')" id="LoginStatus1">Logout</a></li>
           </ul>
         </li>
       </ul>
