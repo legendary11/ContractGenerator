@@ -45,7 +45,7 @@
           <ul class="dropdown-menu" role="menu">
            
             <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
+            <li><a href="/MyProfile.aspx">Profile</a></li>
             <li class="divider"></li>
             <li><a href="javascript:__doPostBack('LoginStatus1$ctl00','')" id="LoginStatus1">Logout</a></li>
           </ul>
