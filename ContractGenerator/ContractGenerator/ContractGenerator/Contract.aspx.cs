@@ -32,20 +32,21 @@ namespace HTMLtoPDF
         {
             try
             {
-                string strHtml = string.Empty;
-                string pdfFileName = Request.PhysicalApplicationPath + "\\files\\" + "GenerateHTMLTOPDF.pdf";
+                //string strHtml = string.Empty;
+                string strHtml = "<html><head></head><body><p>This is a test</p></body></html>";
+                string pdfFileName = Request.PhysicalApplicationPath  + "Contract.pdf";
 
-                StringWriter sw = new StringWriter();
-                HtmlTextWriter hw = new HtmlTextWriter(sw);
-                form1.RenderControl(hw);
-                StringReader sr = new StringReader(sw.ToString());
-                strHtml = sr.ReadToEnd();
-                sr.Close();
+                //StringWriter sw = new StringWriter();
+               // HtmlTextWriter hw = new HtmlTextWriter(sw);
+               // pdfTemplate.RenderControl(hw);
+               // StringReader sr = new StringReader(sw.ToString());
+               // strHtml = sr.ReadToEnd();
+              //  sr.Close();
 
                 CreatePDFFromHTMLFile(strHtml, pdfFileName);
 
                 Response.ContentType = "application/x-download";
-                Response.AddHeader("Content-Disposition", string.Format("attachment; filename=\"{0}\"", "GenerateHTMLTOPDF.pdf"));
+                Response.AddHeader("Content-Disposition", string.Format("attachment; filename=\"{0}\"", "Contract.pdf"));
                 Response.WriteFile(pdfFileName);
                 Response.Flush();
                 Response.End();

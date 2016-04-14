@@ -12,9 +12,9 @@
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contracts<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="ViewEdit.aspx">View Contracts</a></li>
-           <!-- <li><a href="#">Add Contracts</a></li>
-            <li><a href="#">Create New Contract</a></li>	
-             <li class="divider"></li>
+            <li><a href="#">Add Contracts*</a></li>
+            <li><a href="#">Create New Contract**</a></li>	
+           <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
             <li><a href="#">One more separated link</a></li> -->
@@ -22,10 +22,10 @@
         </li>
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profiles*<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">View Profiles</a></li>
+            <li><a href="#">View Profiles*</a></li>
             <li><a href="SignUp.aspx">Add Users</a></li>
-           <!--  <li><a href="#">Add Manager</a></li>	
-            <li class="divider"></li>
+            <li><a href="#">Add Manager**</a></li>	
+           <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
             <li><a href="#">One more separated link</a></li> -->

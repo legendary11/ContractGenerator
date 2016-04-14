@@ -68,7 +68,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div style="color: #0071C4; font-size: large">
+    <div id="pdfTemplate" runat="server" style="color: #0071C4; font-size: large">
     
         Website Development and Hosting Agreement</div>
         <table border="1" class="auto-style1">

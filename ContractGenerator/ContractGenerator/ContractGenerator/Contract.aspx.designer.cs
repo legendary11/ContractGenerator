@@ -22,6 +22,15 @@ namespace HTMLtoPDF {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// pdfTemplate control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl pdfTemplate;
+        
+        /// <summary>
         /// CompanyBox control.
         /// </summary>
         /// <remarks>
