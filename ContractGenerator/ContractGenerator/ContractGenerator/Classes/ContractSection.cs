@@ -9,8 +9,8 @@ namespace ContractGenerator
     {
         private int SectionID;
         private int ParentID;
-        private String SectionTitle;
-        private String SectionDetail;
+        private string SectionTitle;
+        private string SectionDetail;
 
         public int getSectionID()
         {
@@ -22,12 +22,12 @@ namespace ContractGenerator
             return ParentID;
         }
 
-        public String getSectionTitle()
+        public string getSectionTitle()
         {
             return SectionTitle;
         }
 
-        public String getSectionDetail()
+        public string getSectionDetail()
         {
             return SectionDetail;
         }

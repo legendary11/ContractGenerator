@@ -8,12 +8,10 @@ namespace ContractGenerator
 {
     public class ClientSubmission
     {
-
-        private Contract contract = new Contract();
-        private int SubmissionID;
-        private int ContractID;
-        private String Sig; //"Signature" is a keyword
-        private String SubmitDate;
+        private int _submissionID;
+        private int _contractID;
+        private string _sig; //"Signature" is a keyword
+        private string _submitDate;
 
     }
 }

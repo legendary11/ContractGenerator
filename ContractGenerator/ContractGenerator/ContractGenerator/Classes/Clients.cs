@@ -7,41 +7,24 @@ namespace ContractGenerator
 {
     public class Clients
     {
-        private Address clientAddressInfo = new Address();
-        private int clientID;
-        private int contractID;
-        private int projectNumber;
-        private char clientInitials;
-        private String esignature;
+        private Address _clientAddressInfo = new Address();
+        private int _clientID;
+        private int _contractID;
+        private int _projectNumber;
+        private char _clientInitials;
+        private string _esignature;
 
-        public Address getAddress()
-        {
-            return clientAddressInfo;
-        }
+        public Address Address{get;set;}
+        
+        public int ClientID{get;set;}
 
-        public int getClientID()
-        {
-            return clientID;
-        }
+        public int ContractID{get;set;}
+      
+        public int ProjectNumber{get;set;}
 
-        public int getContractID()
-        {
-            return contractID;
-        }
-
-        public int getProjectNumber()
-        {
-            return projectNumber;
-        }
-
-        public char getClientInitials()
-        {
-            return clientInitials;
-        }
-
-        public String getESignature()
-        {
-            return esignature;
-        }
+        public char ClientInitials{get;set;}
+      
+        public string ESignature{get;set;}
+      
     }
 }

@@ -17,8 +17,7 @@
     </style>
 </head>
 <body>
-    <% Response.WriteFile("~/header.aspx");%>
-    <% Response.WriteFile("~/footer.html");%>
+    <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%>
     <form id="form1" runat="server">
     <div>
      <p align="center"><asp:Label ID="ActionStatus" runat="server" CssClass="Important"></asp:Label> </p>
@@ -68,7 +67,7 @@
 
         </p>
 
-        <p><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink></p>
+        <p><asp:HyperLink ID="MainPanelLink" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink></p>
     </div>
     </form>
 </body>

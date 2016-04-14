@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Web.Security;
 using System.IO;
 using System.Data;
 using System.Data.SqlClient;
@@ -20,15 +21,42 @@ namespace ContractGenerator
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                ContractsLink.Visible = false;
-                ViewProfileLink.Visible = false;
-                CreateProfileLink.Visible = false;
-                AdminLink.Visible = false;
-            }
 
+            if (User.Identity.IsAuthenticated)
+            {
+                string[] roles = Roles.GetRolesForUser();
+
+                if (roles.Contains<string>("admin"))
+                {
+                    AdminLink.Visible = true;
+                    ContractsLink.Visible = true;
+                    ViewProfileLink.Visible = true;
+                    CreateProfileLink.Visible = true;
+
+                }
+                else if (roles.Contains<string>("staff"))
+                {
+                    ContractsLink.Visible = true;
+                    ViewProfileLink.Visible = true;
+                    CreateProfileLink.Visible = true;
+                }
+                else if (roles.Contains<string>("client"))
+                {
+                    ContractsLink.Visible = true;
+                    ViewProfileLink.Visible = true;
+                }
+
+                else
+                {
+                    ViewProfileLink.Visible = true;
+                }
+            }
+            else
+            {
+                Response.Redirect("login.aspx");
+            }
         }
        
     }
+
 }

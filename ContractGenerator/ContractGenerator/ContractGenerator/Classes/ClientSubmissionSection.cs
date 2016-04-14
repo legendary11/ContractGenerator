@@ -7,10 +7,10 @@ namespace ContractGenerator
 {
     public class ClientSubmissionSection
     {
-        private int SubmissionSectionID;
-        private int SectionID;
-        private int ContractID;
-        private string OptOutInitial;
-        private string ClientInitial;
+        private int _submissionSectionID;
+        private int _sectionID;
+        private int _contractID;
+        private string _optOutInitial;
+        private string _clientInitial;
     }
 }

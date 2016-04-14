@@ -131,7 +131,6 @@
     <Compile Include="Classes\Clients.cs" />
     <Compile Include="Classes\ClientSubmission.cs" />
     <Compile Include="Classes\ClientSubmissionSection.cs" />
-    <Compile Include="Classes\Contract.cs" />
     <Compile Include="Classes\ContractSection.cs" />
     <Compile Include="Classes\ContractTemplate.cs" />
     <Compile Include="Classes\CSinCT.cs" />
@@ -168,9 +167,6 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Role.cs" />
-    <Compile Include="Classes\User.cs" />
-    <Compile Include="Classes\UserInRole.cs" />
-    <Compile Include="Classes\Users.cs" />
     <Compile Include="Query.cs" />
     <Compile Include="SignUp.aspx.cs">
       <DependentUpon>SignUp.aspx</DependentUpon>

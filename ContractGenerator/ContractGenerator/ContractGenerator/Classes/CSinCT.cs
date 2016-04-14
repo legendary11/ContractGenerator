@@ -11,10 +11,10 @@ namespace ContractGenerator
     {
         private int TemplateID;
         private int SectionID;
-        private String InitialBox;
+        private string InitialBox;
         private bool OptOutBox;
-        private String SignBox;
-        private String EntryBox;
+        private string SignBox;
+        private string EntryBox;
     }
        
 }

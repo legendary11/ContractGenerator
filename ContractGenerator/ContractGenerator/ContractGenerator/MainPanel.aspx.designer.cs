@@ -31,39 +31,39 @@ namespace ContractGenerator {
         protected global::System.Web.UI.WebControls.LoginStatus LoginStatus1;
         
         /// <summary>
-        /// HyperLink1 control.
+        /// ContractsLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.HyperLink ContractsLink;
         
         /// <summary>
-        /// HyperLink2 control.
+        /// ViewProfileLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.HyperLink ViewProfileLink;
         
         /// <summary>
-        /// HyperLink3 control.
+        /// CreateProfileLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink3;
+        protected global::System.Web.UI.WebControls.HyperLink CreateProfileLink;
         
         /// <summary>
-        /// HyperLink4 control.
+        /// AdminLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink4;
+        protected global::System.Web.UI.WebControls.HyperLink AdminLink;
     }
 }

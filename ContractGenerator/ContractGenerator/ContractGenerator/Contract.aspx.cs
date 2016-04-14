@@ -17,7 +17,10 @@ namespace HTMLtoPDF
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+              if (!User.Identity.IsAuthenticated)
+              {
+                  Response.Redirect("login.aspx");
+              }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -34,7 +37,7 @@ namespace HTMLtoPDF
 
                 StringWriter sw = new StringWriter();
                 HtmlTextWriter hw = new HtmlTextWriter(sw);
-               // form1.RenderControl(hw);
+                form1.RenderControl(hw);
                 StringReader sr = new StringReader(sw.ToString());
                 strHtml = sr.ReadToEnd();
                 sr.Close();

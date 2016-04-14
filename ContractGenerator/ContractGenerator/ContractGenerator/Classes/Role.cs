@@ -7,23 +7,18 @@ namespace ContractGenerator
 {
     public class Role
     {
-        private int RoleID;
-        private String RoleName;
-        private String RoleDes; 
+        private int _roleID;
+        private string _roleName;
+        private string _roleDes;
 
-        public int getRoleID()
+        public Role()
         {
-            return RoleID;
+            //constructor
         }
 
-        public String getRoleName()
-        {
-            return RoleName;
-        }
-
-        public String getRoleDes()
-        {
-            return RoleDes;
-        }
+        public int RoleID { get; set; }
+        public string RoleName { get; set; }
+        public string RoleDes{get; set;}
+        
     }
 }

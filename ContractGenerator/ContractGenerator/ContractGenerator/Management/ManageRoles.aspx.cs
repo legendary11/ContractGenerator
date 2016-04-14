@@ -12,21 +12,26 @@ namespace ContractGenerator.Management
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
+            if (User.Identity.IsAuthenticated)
             {
-                // Bind the users and roles 
-                BindUsersToUserList();
-                BindRolesToList();
+                if (!Page.IsPostBack)
+                {
+                    // Bind the users and roles 
+                    BindUsersToUserList();
+                    BindRolesToList();
 
-                // Check the selected user's roles 
-                CheckRolesForSelectedUser();
+                    // Check the selected user's roles 
+                    CheckRolesForSelectedUser();
 
-                // Display those users belonging to the currently selected role 
-                DisplayUsersBelongingToRole(); 
+                    // Display those users belonging to the currently selected role 
+                    DisplayUsersBelongingToRole();
 
-            } 
-
-
+                }
+            }
+            else
+            {
+                Response.Redirect("login.aspx");
+            }
         }
 
         private void BindUsersToUserList()
