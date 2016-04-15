@@ -24,7 +24,11 @@
         <div>OptOut (0 or 1) <asp:TextBox ID="OptOut" runat="server"></asp:TextBox></div>
         <div>Entry Box (0 or 1) <asp:TextBox ID ="EntryBox" runat="server"></asp:TextBox></div>
 
+<<<<<<< HEAD
         <div><asp:button ID="Insert" runat="server" Text="Insert" OnClick="InsertClick"/></div>
+=======
+        <div><asp:button ID="Insert" runat="server" Text="Save" OnClick="InsertClick"/></div>
+>>>>>>> origin/master
 
     </div>
     </form>
