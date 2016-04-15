@@ -5,6 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Sign Up</title>
+     <link href="bootstrap.css" rel="stylesheet"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <style type="text/css">
         .auto-style1 {
             height: 23px;
@@ -12,6 +15,8 @@
     </style>
 </head>
 <body>
+     <% Response.WriteFile("~/header.aspx");%>  
+     <% Response.WriteFile("~/footer.html");%> 
     <form id="form1" runat="server">
         <asp:CreateUserWizard ID="RegisterUserWithRoles" runat="server" FinishDestinationPageUrl="~/Default.aspx" OnCreatedUser="CreateUserWizard1_CreatedUser" ContinueDestinationPageUrl="~/MainPanel.aspx" LoginCreatedUser="False">
             <WizardSteps>

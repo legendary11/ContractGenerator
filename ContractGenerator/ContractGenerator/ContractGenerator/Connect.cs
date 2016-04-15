@@ -16,18 +16,28 @@ using System.Configuration;
         private SqlDataAdapter myAdapter;
         ConnectionStringSettings connectionStringSettings = ConfigurationManager.ConnectionStrings["ContractGenerator"];
         Document doc = new Document();
+        private SqlConnection conn;
+
+        /// <constructor>
+        /// Initialise Connection
+        /// </constructor>
+        public Connect()
+        {
+            myAdapter = new SqlDataAdapter();
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings
+					["ContractGen"].ConnectionString);
+        }
+
 
         private SqlConnection openConnection()
         {
-            string connectionString = connectionStringSettings.ConnectionString;
-            SqlConnection con = new SqlConnection(connectionString);
-
-            if (con.State == ConnectionState.Closed || con.State == ConnectionState.Broken)
+           
+            if (conn.State == ConnectionState.Closed || conn.State == ConnectionState.Broken)
             {
-                con.Open();
+                conn.Open();
             }
 
-            return con;
+            return conn;
         }
 
         public DataTable executeSelectQuery(String _query)
@@ -56,5 +66,48 @@ using System.Configuration;
             }
             return dataTable;
         }
+
+        public bool executeInsertQuery(String _query)
+        {
+            SqlCommand myCommand = new SqlCommand();
+            try
+            {
+                myCommand.Connection = openConnection();
+                myCommand.CommandText = _query;
+                myAdapter.InsertCommand = myCommand;
+                myCommand.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                Console.Write("Error");
+                return false;
+            }
+            finally
+            {
+            }
+            return true;
+        }
+
+        public bool executeUpdateQuery(String _query)
+        {
+            SqlCommand myCommand = new SqlCommand();
+            try
+            {
+                myCommand.Connection = openConnection();
+                myCommand.CommandText = _query;
+                myAdapter.UpdateCommand = myCommand;
+                myCommand.ExecuteNonQuery();
+            }
+            catch (SqlException e)
+            {
+                Console.Write("Error");
+                return false;
+            }
+            finally
+            {
+            }
+            return true;
+        }
+
 
     }

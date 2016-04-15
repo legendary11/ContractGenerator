@@ -27,7 +27,7 @@ table {
   *:after {
     color: #000 !important;
     text-shadow: none !important;
-    background: transparent !important;
+   
     -webkit-box-shadow: none !important;
             box-shadow: none !important;
   }
@@ -71,7 +71,7 @@ input[type="submit"] {
     </style>
 </head>
 <body>
-    <% Response.WriteFile("~/header.aspx");%>
+   
     <% Response.WriteFile("~/footer.html");%>
     <form id="form1" runat="server">
     <div>
