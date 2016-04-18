@@ -13,7 +13,11 @@ namespace ContractGenerator
         {
             if (User.Identity.IsAuthenticated)
             {
-                Response.Redirect("MainPanel.aspx");
+                Response.Redirect("~/MainPanel.aspx");
+            }
+            else
+            {
+                Response.Redirect("~/login.aspx");
             }
         }
     }

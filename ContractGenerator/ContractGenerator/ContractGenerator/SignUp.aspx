@@ -1,9 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="ContractGenerator.SignUp" %>
-
-<!DOCTYPE html>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/master.Master" CodeBehind="SignUp.aspx.cs" Inherits="ContractGenerator.SignUp" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <title>Sign Up</title>
      <link href="bootstrap.css" rel="stylesheet"/>
     <script src="js/jquery-1.11.3.min.js"></script>
@@ -18,7 +20,7 @@
      <% Response.WriteFile("~/header.aspx");%>  
      <% Response.WriteFile("~/footer.html");%> 
     <form id="form1" runat="server">
-        <asp:CreateUserWizard ID="RegisterUserWithRoles" runat="server" FinishDestinationPageUrl="~/Default.aspx" OnCreatedUser="CreateUserWizard1_CreatedUser" ContinueDestinationPageUrl="~/MainPanel.aspx" LoginCreatedUser="False">
+        <asp:CreateUserWizard ID="RegisterUserWithRoles" runat="server" FinishDestinationPageUrl="~/Default.aspx" OnCreatedUser="CreateUserWizard1_CreatedUser" ContinueDestinationPageUrl="~/MainPanel.aspx" LoginCreatedUser="False" CreateUserButtonText="Next">
             <WizardSteps>
                 <asp:CreateUserWizardStep runat="server" >
                     <ContentTemplate>
@@ -93,17 +95,33 @@
                         </table>
                     </ContentTemplate>
                 </asp:CreateUserWizardStep>
-                <asp:WizardStep ID="SpecifyRolesStep" runat="server" AllowReturn="False" StepType="Step" Title="Specify Roles">
+                <asp:WizardStep ID="SpecifyRolesStep" runat="server" StepType="Step" Title="Specify Roles">
                     <asp:CheckBoxList ID="RoleList" runat="server"></asp:CheckBoxList>
                 </asp:WizardStep>
-                <asp:CompleteWizardStep runat="server" />
+                <asp:CompleteWizardStep runat="server" >
+                    <ContentTemplate>
+                        <table>
+                            <tr>
+                                <td align="center">Complete</td>
+                            </tr>
+                            <tr>
+                                <td>Your account has been successfully created.</td>
+                            </tr>
+                            <tr>
+                                <td align="right">
+                                    <asp:Button ID="ContinueButton" runat="server" CausesValidation="False" CommandName="Continue" PostBackUrl="~/MainPanel.aspx" Text="Continue" ValidationGroup="RegisterUserWithRoles" />
+                                </td>
+                            </tr>
+                        </table>
+                    </ContentTemplate>
+                </asp:CompleteWizardStep>
             </WizardSteps>
         </asp:CreateUserWizard>
         <p><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink></p>
 
     <div>
-    
     </div>
     </form>
 </body>
 </html>
+</asp:Content>

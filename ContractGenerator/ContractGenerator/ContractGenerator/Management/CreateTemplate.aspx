@@ -1,9 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CreateTemp.aspx.cs" Inherits="ContractGenerator.CreateTemp" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/master.Master" CodeBehind="CreateTemplate.aspx.cs" Inherits="ContractGenerator.CreateTemp" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <title></title>
 </head>
 <body>
@@ -30,3 +32,4 @@
     </form>
 </body>
 </html>
+</asp:Content>

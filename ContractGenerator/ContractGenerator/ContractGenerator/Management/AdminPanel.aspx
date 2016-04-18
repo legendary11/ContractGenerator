@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="AdminPanel.aspx.cs" Inherits="ContractGenerator.Management.AdminPanel1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPages/master.Master" AutoEventWireup="true" CodeBehind="AdminPanel.aspx.cs" Inherits="ContractGenerator.Management.AdminPanel1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -43,7 +43,7 @@
         </asp:GridView>
         <br />
         <br />
-        <asp:Button ID="createTemplateButton" runat="server" PostBackUrl="~/CreateTemp.aspx" Text="Create Template" />
+        <asp:Button ID="createTemplateButton" runat="server" PostBackUrl="~/Management/CreateTemplate.aspx" Text="Create Template" />
         <br />
     </div>
    </form>

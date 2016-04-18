@@ -1,9 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ViewEdit.aspx.cs" Inherits="ContractGenerator.ViewEdit" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/master.Master" CodeBehind="ViewEdit.aspx.cs" Inherits="ContractGenerator.ViewEdit" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
+<head>
     <title>View/Edit Contracts</title>
     <link href="bootstrap.css" rel="stylesheet"/>
  <script src="js/jquery-1.11.3.min.js"></script>
@@ -22,3 +24,4 @@
     </form>
 </body>
 </html>
+</asp:Content>

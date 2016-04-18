@@ -75,8 +75,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bootstrap.css" />
-    <Content Include="CreateContractSections.aspx" />
-    <Content Include="CreateTemp.aspx" />
+    <Content Include="Management\CreateContractSections.aspx" />
+    <Content Include="Management\CreateTemplate.aspx" />
     <Content Include="footer.html" />
     <Content Include="ForgotPassword.aspx" />
     <Content Include="header.aspx" />
@@ -89,7 +89,7 @@
     <Content Include="MyProfile.aspx" />
     <Content Include="packages.config" />
     <Content Include="Contract.aspx" />
-    <Content Include="master.Master" />
+    <Content Include="MasterPages\master.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -108,19 +108,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BusLayer.cs" />
-    <Compile Include="CreateContractSections.aspx.cs">
+    <Compile Include="Management\CreateContractSections.aspx.cs">
       <DependentUpon>CreateContractSections.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CreateContractSections.aspx.designer.cs">
+    <Compile Include="Management\CreateContractSections.aspx.designer.cs">
       <DependentUpon>CreateContractSections.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CreateTemp.aspx.cs">
-      <DependentUpon>CreateTemp.aspx</DependentUpon>
+    <Compile Include="Management\CreateTemplate.aspx.cs">
+      <DependentUpon>CreateTemplate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="CreateTemp.aspx.designer.cs">
-      <DependentUpon>CreateTemp.aspx</DependentUpon>
+    <Compile Include="Management\CreateTemplate.aspx.designer.cs">
+      <DependentUpon>CreateTemplate.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
@@ -176,11 +176,11 @@
     <Compile Include="Management\ManageRoles.aspx.designer.cs">
       <DependentUpon>ManageRoles.aspx</DependentUpon>
     </Compile>
-    <Compile Include="master.Master.cs">
+    <Compile Include="MasterPages\master.Master.cs">
       <DependentUpon>master.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="master.Master.designer.cs">
+    <Compile Include="MasterPages\master.Master.designer.cs">
       <DependentUpon>master.Master</DependentUpon>
     </Compile>
     <Compile Include="MyProfile.aspx.cs">

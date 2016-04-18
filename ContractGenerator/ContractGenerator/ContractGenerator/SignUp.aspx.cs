@@ -10,12 +10,11 @@ namespace ContractGenerator
 {
     public partial class SignUp : System.Web.UI.Page
     {
-
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (User.Identity.IsAuthenticated)
-            {
-                if (!Page.IsPostBack)
+            RegisterUserWithRoles.ActiveStepIndex = 0;
+
+            if (!Page.IsPostBack)
                 {
                     // Reference the SpecifyRolesStep WizardStep 
                     WizardStep SpecifyRolesStep = RegisterUserWithRoles.FindControl("SpecifyRolesStep") as WizardStep;
@@ -27,11 +26,7 @@ namespace ContractGenerator
                     RoleList.DataSource = Roles.GetAllRoles();
                     RoleList.DataBind();
                 }
-            }
-            else
-            {
-                Response.Redirect("login.aspx");
-            }
+         
         }
 
         protected void CreateUserWizard1_CreatedUser(object sender, EventArgs e)
@@ -47,24 +42,24 @@ namespace ContractGenerator
             Response.Redirect("Login.aspx");
         }
 
-        protected void RegisterUserWithRoles_ActiveStepChanged(object sender, EventArgs e)
-        {
-            // Have we JUST reached the Complete step? 
-            if (RegisterUserWithRoles.ActiveStep.Title == "Complete")
-            {
-                // Reference the SpecifyRolesStep WizardStep 
-                WizardStep SpecifyRolesStep = RegisterUserWithRoles.FindControl("SpecifyRolesStep") as WizardStep;
+        protected void RegisterUserWithRoles_ActiveStepChanged(object sender, EventArgs e) 
+        { 
 
-                // Reference the RoleList CheckBoxList 
-                CheckBoxList RoleList = SpecifyRolesStep.FindControl("RoleList") as CheckBoxList;
+             if (RegisterUserWithRoles.ActiveStep.Title == "Complete") 
+             { 
+                  // Reference the SpecifyRolesStep WizardStep 
+                 WizardStep SpecifyRolesStep = RegisterUserWithRoles.FindControl("SpecifyRolesStep") as WizardStep; 
 
-                // Add the checked roles to the just-added user 
-                foreach (ListItem li in RoleList.Items)
-                {
-                    if (li.Selected)
-                        Roles.AddUserToRole(RegisterUserWithRoles.UserName, li.Text);
-                }
-            }
+                  // Reference the RoleList CheckBoxList 
+                  CheckBoxList RoleList = SpecifyRolesStep.FindControl("RoleList") as CheckBoxList; 
+
+                  // Add the checked roles to the just-added user 
+                  foreach (ListItem li in RoleList.Items) 
+                  { 
+                       if (li.Selected) 
+                            Roles.AddUserToRole(RegisterUserWithRoles.UserName, li.Text); 
+                  } 
+             } 
         }
     }
 }
