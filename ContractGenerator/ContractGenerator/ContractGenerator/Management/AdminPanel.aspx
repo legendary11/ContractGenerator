@@ -1,25 +1,26 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="AdminPanel.aspx.cs" Inherits="ContractGenerator.AdminPanel" %>
-
-<!DOCTYPE html>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/master.Master" AutoEventWireup="true" CodeBehind="AdminPanel.aspx.cs" Inherits="ContractGenerator.Management.AdminPanel1" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Adminstrator Panel</title>
-    <link href="../bootstrap.css" rel="stylesheet"/>
+<head>
+    <title>Admin Panel</title>
+     <link href="../bootstrap.css" rel="stylesheet"/>
     <script src="../js/jquery-1.11.3.min.js"></script>
     <script src="../js/bootstrap.js"></script>
 </head>
 <body>
-    <% Response.WriteFile("~/header.aspx");%>
-    <% Response.WriteFile("~/footer.html");%>
-    <form id="form1" runat="server">
+     <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%>
+   <form id="form1" runat="server">
     <div>
         <h1>Admin Page</h1>
         <h2>
         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Management/ManageRoles.aspx">Manage Roles</asp:HyperLink>
         </h2>
         <p>
-            <asp:Button ID="Button1" runat="server" Text="Create New User" PostBackUrl="~/Management/SignUp.aspx" />
+            <asp:Button ID="createUserButton" runat="server" Text="Create New User" PostBackUrl="~/Management/SignUp.aspx" />
         </p>
         <b>Create a New Role: </b>
         <asp:TextBox ID="RoleName" runat="server"></asp:TextBox>
@@ -41,8 +42,12 @@
 
         </asp:GridView>
         <br />
+        <br />
+        <asp:Button ID="createTemplateButton" runat="server" PostBackUrl="~/CreateTemp.aspx" Text="Create Template" />
+        <br />
     </div>
-    </form> 
-   
+   </form>
 </body>
+
 </html>
+</asp:Content>

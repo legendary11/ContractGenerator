@@ -1,53 +1,14 @@
-C:\Users\nmcc1_000\OneDrive\UI450\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.csprojResolveAssemblyReference.cache
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.csprojResolveAssemblyReference.cache
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll.config
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.pdb
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.pdb
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.xml
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.xml
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.xml
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll.config
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.pdb
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.dll
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.dll
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.dll
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.xml
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.xml
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.xml
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.csprojResolveAssemblyReference.cache
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.dll
-C:\Users\nmcc1_000\Downloads\ContractGenerator-master (1)\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.pdb
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll.config
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.pdb
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.xml
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.xml
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.xml
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.csprojResolveAssemblyReference.cache
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.dll
-C:\Users\nmcc1_000\Documents\Visual Studio 2013\Projects\ContractGenerator\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.pdb
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll.config
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.pdb
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.dll
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.dll
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.dll
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.xml
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.xml
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.xml
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.csprojResolveAssemblyReference.cache
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.dll
-C:\Users\tyler_000\Desktop\contract4\contract\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.pdb
-<<<<<<< HEAD
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll.config
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.pdb
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.dll
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.dll
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.dll
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.xml
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\EntityFramework.SqlServer.xml
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\bin\System.Web.Providers.xml
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.dll
+C:\Users\tyler_000\Desktop\contract5\contract\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.pdb
 C:\Users\nmcc1_000\Downloads\ContractGenerator-master\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll.config
 C:\Users\nmcc1_000\Downloads\ContractGenerator-master\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.dll
 C:\Users\nmcc1_000\Downloads\ContractGenerator-master\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\bin\ContractGenerator.pdb
@@ -60,5 +21,3 @@ C:\Users\nmcc1_000\Downloads\ContractGenerator-master\ContractGenerator-master\C
 C:\Users\nmcc1_000\Downloads\ContractGenerator-master\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.csprojResolveAssemblyReference.cache
 C:\Users\nmcc1_000\Downloads\ContractGenerator-master\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.dll
 C:\Users\nmcc1_000\Downloads\ContractGenerator-master\ContractGenerator-master\ContractGenerator\ContractGenerator\ContractGenerator\obj\Debug\ContractGenerator.pdb
-=======
->>>>>>> origin/master

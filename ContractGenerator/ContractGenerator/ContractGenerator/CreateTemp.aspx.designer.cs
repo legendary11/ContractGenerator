@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ContractGenerator.Management {
+namespace ContractGenerator {
     
     
-    public partial class AdminPanel1 {
+    public partial class CreateTemp {
         
         /// <summary>
         /// form1 control.
@@ -22,66 +22,66 @@ namespace ContractGenerator.Management {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// HyperLink2 control.
+        /// Wizard1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.Wizard Wizard1;
         
         /// <summary>
-        /// createUserButton control.
+        /// ChooseSectionStep control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button createUserButton;
+        protected global::System.Web.UI.WebControls.WizardStep ChooseSectionStep;
         
         /// <summary>
-        /// RoleName control.
+        /// SectionList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox RoleName;
+        protected global::System.Web.UI.WebControls.CheckBoxList SectionList;
         
         /// <summary>
-        /// CreateRoleButton control.
+        /// ContractGen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CreateRoleButton;
+        protected global::System.Web.UI.WebControls.SqlDataSource ContractGen;
         
         /// <summary>
-        /// HyperLink1 control.
+        /// ChooseDetailStep control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.WizardStep ChooseDetailStep;
         
         /// <summary>
-        /// RoleList control.
+        /// DetailList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView RoleList;
+        protected global::System.Web.UI.WebControls.CheckBoxList DetailList;
         
         /// <summary>
-        /// createTemplateButton control.
+        /// SqlDataSource1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button createTemplateButton;
+        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
     }
 }

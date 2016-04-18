@@ -7,12 +7,11 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Windows.Forms;
 
-
-namespace ContractGenerator.Management
+namespace ContractGenerator
 {
-    public partial class AdminPanel1 : System.Web.UI.Page
+    public partial class AdminPanel : System.Web.UI.Page
     {
-         protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
             /*
             string[] roles = Roles.GetRolesForUser();

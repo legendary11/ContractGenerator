@@ -15,19 +15,34 @@ namespace ContractGenerator.Classes
             _query = new Query();
         }
 
-        public ContractTemplate getTemplateTitle(string templateTitle)
+        public ContractSection getSectionTitle(int sectionID)
         {
-            ContractTemplate contractTemplate = new ContractTemplate();
+            ContractSection contractSection = new ContractSection();
             DataTable dataTable = new DataTable();
 
-            dataTable = _query.sampleQuery(templateTitle);
+            dataTable = _query.SectionID(sectionID);
 
             foreach (DataRow dr in dataTable.Rows)
             {
-                contractTemplate.templateTitle = dr["_templateTitle"].ToString();
+                contractSection.SectionTitle = dr["SectionTitle"].ToString();
 
             }
-            return contractTemplate;
+            return contractSection;
+        }
+
+        public ContractSection getDetails(int detailID)
+        {
+            ContractSection contractSection = new ContractSection();
+            DataTable dataTable = new DataTable();
+
+            dataTable = _query.SectionDetail(detailID);
+
+            foreach (DataRow dr in dataTable.Rows)
+            {
+                contractSection.SectionDetail = dr["SectionDetail"].ToString();
+
+            }
+            return contractSection;
         }
     }
 }

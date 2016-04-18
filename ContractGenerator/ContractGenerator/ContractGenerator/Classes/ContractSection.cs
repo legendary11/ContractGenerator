@@ -7,29 +7,32 @@ namespace ContractGenerator
 {
     public class ContractSection
     {
-        private int SectionID;
-        private int ParentID;
-        private string SectionTitle;
-        private string SectionDetail;
+        private int _sectionID;
+        private int _parentID;
+        private string _sectionTitle;
+        private string _sectionDetail;
 
-        public int getSectionID()
+        public ContractSection()
         {
-            return SectionID;
+            _sectionID = 0;
+            _sectionTitle = "";
+            _sectionDetail = " ";
+            _parentID = 0;
         }
 
-        public int getParentID()
-        {
-            return ParentID;
-        }
 
-        public string getSectionTitle()
+        public int SectionID{get;set;}
+        
+        public int ParentID{get;set;}
+       
+        public string SectionTitle{get;set;}
+       
+        public string SectionDetail{get;set;}
+
+        public override string ToString()
         {
             return SectionTitle;
         }
 
-        public string getSectionDetail()
-        {
-            return SectionDetail;
-        }
     }
 }
