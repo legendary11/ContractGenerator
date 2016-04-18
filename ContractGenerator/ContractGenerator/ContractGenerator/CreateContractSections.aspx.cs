@@ -21,7 +21,7 @@ namespace ContractGenerator
         }
 
         protected void  InsertClick(Object sender, EventArgs e) {
-<<<<<<< HEAD
+
             string sectionID = SectionID.Text;
             string parentID = ParentID.Text;
             string sectionTitle = SectionTitle.Text;
@@ -35,20 +35,7 @@ namespace ContractGenerator
             con.executeInsertQuery("INSERT INTO ContractSection (SectionID, ParentID, SectionTitle, SectionDetail, Initial, Signature, OptOut, EntryBox) VALUES (" + sectionID + ", " + parentID + ", " + sectionTitle + ", " + sectionDetail + ", " + initial + ", " + signature + ", " + optOut + ", " + entryBox + ");");
 
             Response.Redirect("mainpanel.aspx");
-=======
-            String sectionID = SectionID.Text;
-            String parentID = ParentID.Text;
-            String sectionTitle = SectionTitle.Text;
-            String sectionDetail = SectionDetail.Text;
-            String initial = Initial.Text;
-            String signature = Signature.Text;
-            String optOut = OptOut.Text;
-            String entryBox = EntryBox.Text;
 
-            Connect con= new Connect();
-            con.executeSelectQuery("INSERT INTO ContractSection (SectionID, ParentID, SectionTitle, SectionDetail, Initial, Signature, OptOut, EntryBox) VALUES (" + sectionID + ", " + parentID + ", " + sectionTitle + ", " + sectionDetail + ", " + initial + ", " + signature + ", " + optOut + ", " + entryBox + ");");
-
->>>>>>> origin/master
         }
 
     }
