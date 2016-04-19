@@ -1,4 +1,8 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" style="
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+">
   <div class="container-fluid"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -13,9 +17,9 @@
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contracts<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="/ViewEdit.aspx">View Contracts</a></li>
-            <li><a href="#">Add Contracts*</a></li>
-            <li><a href="#">Create New Contract**</a></li>	
-            <li><a href="/CreateContractSections.aspx">Create New Contract Sections**</a></li>
+          <!--  <li><a href="#">Add Contracts*</a></li>
+            <li><a href="#">Create New Contract**</a></li>	 -->
+            <li><a href="/Management/CreateContractSections.aspx">Create New Contract Sections**</a></li>
            <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
@@ -24,9 +28,9 @@
         </li>
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profiles*<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="#">View Profiles*</a></li>
+          <!--  <li><a href="#">View Profiles*</a></li> -->
             <li><a href="/SignUp.aspx">Add Users</a></li>
-            <li><a href="#">Add Manager**</a></li>	
+          <!--  <li><a href="#">Add Manager**</a></li>	-->
            <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
@@ -45,7 +49,7 @@
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><script> document.write(user); </script><span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
            
-            <li><a href="#">Settings</a></li>
+           <!-- <li><a href="#">Settings</a></li> -->
             <li><a href="/MyProfile.aspx">Profile</a></li>
             <li class="divider"></li>
             <li><a href="javascript:__doPostBack('LoginStatus1$ctl00','')" id="LoginStatus1">Logout</a></li>

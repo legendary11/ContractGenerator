@@ -13,9 +13,18 @@
 </head>
 <body>
   <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%> 
-    <form id="form1" runat="server">
-        <p>
-            Welcome to your client page</p>
+    <form id="form1" runat="server" >
+        <div class="container-fluid">
+            <div class="row">
+                <div>
+                   <p>
+                 Welcome to your client page
+
+                   </p>
+                </div>
+            </div>
+        </div>
+        
         <p>
             Login Status
             <asp:LoginStatus ID="LoginStatus1" runat="server" />
