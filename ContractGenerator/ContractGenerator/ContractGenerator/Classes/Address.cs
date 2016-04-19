@@ -7,67 +7,36 @@ namespace ContractGenerator
 {
     public class Address
     {
-        private String companyName;
-        private String primaryContact;
-        private String street1;
-        private String street2;
-        private String city;
-        private String state;
-        private String email;
-        private String domainName;
-        private String phone;
-        private int zip;
+        private string _companyName;
+        private string _primaryContact;
+        private string _street1;
+        private string _street2;
+        private string _city;
+        private string _state;
+        private string _email;
+        private string _domainName;
+        private string _phone;
+        private int _zip;
 
-        public String getCompanyName()
-        {
-            return companyName;
-        }
+        public string CompanyName { get; set; }
 
-        public String getPrimaryContact()
-        {
-            return primaryContact;
-        }
+        public string PrimaryContact { get; set; }
 
-        public String getStreet1()
-        {
-            return street1;
-        }
+        public string Street1 { get; set; }
 
-        public String getStreet2()
-        {
-            return street2;
-        }
+        public string Street2 { get; set; }
 
-        public String getCity()
-        {
-            return city;
-        }
+        public string City { get; set; }
 
-        public String getState()
-        {
-            return state;
-        }
+        public string State { get; set; }
 
-        public String getEmail()
-        {
-            return email;
-        }
+        public string Email { get; set; }
 
-        public String getDomainName()
-        {
-            return domainName;
-        }
+        public string DomainName { get; set; }
 
-        public String getPhone()
-        {
-            return phone;
-        }
+        public string Phone { get; set; }
 
-        public int getZip()
-        {
-            return zip;
-        }
-
+        public int Zip { get; set; }
 
     }
 }
