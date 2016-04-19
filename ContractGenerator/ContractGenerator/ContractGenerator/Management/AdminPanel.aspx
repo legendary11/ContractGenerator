@@ -16,12 +16,10 @@
    <form id="form1" runat="server">
     <div>
         <h1>Admin Page</h1>
-        <h2>
+        <h4>
         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Management/ManageRoles.aspx">Manage Roles</asp:HyperLink>
-        </h2>
-        <p>
-            <asp:Button ID="createUserButton" runat="server" Text="Create New User" PostBackUrl="~/Management/SignUp.aspx" />
-        </p>
+        </h4>
+        
         <b>Create a New Role: </b>
         <asp:TextBox ID="RoleName" runat="server"></asp:TextBox>
         <br />
@@ -29,7 +27,6 @@
         <p><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink></p>
         <asp:GridView ID="RoleList" runat="server" AutoGenerateColumns="False" OnRowDeleting="RoleList_RowDeleting" >
             <Columns>
-               <asp:CommandField DeleteText="Delete Role" ShowDeleteButton="True"/>
                 <asp:TemplateField HeaderText="Role">
                     <ItemTemplate>
                         <asp:Label runat="server" ID="RoleNameLabel" Text='<%# Container.DataItem %>' />
@@ -38,10 +35,16 @@
 
                 </asp:TemplateField>
 
+               <asp:CommandField DeleteText="Delete Role" ShowDeleteButton="True"/>
+
             </Columns>
 
         </asp:GridView>
         <br />
+        <p>
+            <asp:HyperLink ID="mainPanelLink" runat="server" NavigateUrl="~/MainPanel.aspx">Create New User</asp:HyperLink>
+
+        </p>
         <br />
         <asp:Button ID="createTemplateButton" runat="server" PostBackUrl="~/Management/CreateTemplate.aspx" Text="Create Template" />
         <br />

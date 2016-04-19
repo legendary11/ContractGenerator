@@ -31,15 +31,6 @@ namespace ContractGenerator.Management {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
         
         /// <summary>
-        /// createUserButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button createUserButton;
-        
-        /// <summary>
         /// RoleName control.
         /// </summary>
         /// <remarks>
@@ -74,6 +65,15 @@ namespace ContractGenerator.Management {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView RoleList;
+        
+        /// <summary>
+        /// mainPanelLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink mainPanelLink;
         
         /// <summary>
         /// createTemplateButton control.

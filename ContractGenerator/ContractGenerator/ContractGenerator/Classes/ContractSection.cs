@@ -31,7 +31,7 @@ namespace ContractGenerator
 
         public override string ToString()
         {
-            return SectionTitle;
+            return String.Format("{0} {1}\n", SectionTitle, SectionDetail);
         }
 
     }

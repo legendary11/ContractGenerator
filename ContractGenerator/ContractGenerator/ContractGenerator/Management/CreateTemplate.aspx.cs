@@ -65,8 +65,8 @@ namespace ContractGenerator
                     //add section title loop
                     for (int i = 0; i < sectionCount; i++)
                     {
-                        strHtml += _buslayer.getSectionTitle(i).ToString() + Environment.NewLine;
-                       
+                        strHtml += "<h1 style='color: #3A71C4'>" + _buslayer.getSectionTitle(i).ToString() + "</h1>";
+                        strHtml +=  "<p style='color: #000000'>" + _buslayer.getDetails(i).ToString() + "</p>";
 
                     }
 
