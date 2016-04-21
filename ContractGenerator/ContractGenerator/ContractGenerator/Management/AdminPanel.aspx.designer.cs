@@ -22,13 +22,13 @@ namespace ContractGenerator.Management {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// CreateRoleButton control.
+        /// HyperLink2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button CreateRoleButton;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
         
         /// <summary>
         /// RoleName control.
@@ -40,13 +40,13 @@ namespace ContractGenerator.Management {
         protected global::System.Web.UI.WebControls.TextBox RoleName;
         
         /// <summary>
-        /// RoleList control.
+        /// CreateRoleButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView RoleList;
+        protected global::System.Web.UI.WebControls.Button CreateRoleButton;
         
         /// <summary>
         /// HyperLink1 control.
@@ -58,22 +58,22 @@ namespace ContractGenerator.Management {
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
         
         /// <summary>
-        /// createUserLink control.
+        /// RoleList control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink createUserLink;
+        protected global::System.Web.UI.WebControls.GridView RoleList;
         
         /// <summary>
-        /// manageRolesLink control.
+        /// mainPanelLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink manageRolesLink;
+        protected global::System.Web.UI.WebControls.HyperLink mainPanelLink;
         
         /// <summary>
         /// createTemplateButton control.

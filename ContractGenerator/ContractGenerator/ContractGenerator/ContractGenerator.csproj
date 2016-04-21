@@ -74,6 +74,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="bootstrap.css" />
     <Content Include="Management\CreateContractSections.aspx" />
     <Content Include="Management\CreateTemplate.aspx" />
@@ -101,13 +105,17 @@
     <Content Include="MainPanel.aspx" />
     <Content Include="Global.asax" />
     <Content Include="SignUp.aspx" />
+    <Content Include="ViewContract.aspx" />
+    <Content Include="ViewEditSection.aspx" />
     <Content Include="ViewEdit.aspx" />
+    <Content Include="ViewEditTemplate.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\BusLayer.cs" />
+    <Compile Include="Classes\SqlComm.cs" />
     <Compile Include="Management\CreateContractSections.aspx.cs">
       <DependentUpon>CreateContractSections.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -208,6 +216,20 @@
     <Compile Include="Contract.aspx.designer.cs">
       <DependentUpon>Contract.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewContract.aspx.cs">
+      <DependentUpon>ViewContract.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewContract.aspx.designer.cs">
+      <DependentUpon>ViewContract.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewEditSection.aspx.cs">
+      <DependentUpon>ViewEditSection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewEditSection.aspx.designer.cs">
+      <DependentUpon>ViewEditSection.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ViewEdit.aspx.cs">
       <DependentUpon>ViewEdit.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -215,9 +237,15 @@
     <Compile Include="ViewEdit.aspx.designer.cs">
       <DependentUpon>ViewEdit.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ViewEditTemplate.aspx.cs">
+      <DependentUpon>ViewEditTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewEditTemplate.aspx.designer.cs">
+      <DependentUpon>ViewEditTemplate.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

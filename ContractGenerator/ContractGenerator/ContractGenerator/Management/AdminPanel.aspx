@@ -12,15 +12,19 @@
     <script src="../js/bootstrap.js"></script>
 </head>
 <body>
-     <% Response.WriteFile("~/header.aspx");%><% Response.WriteFile("~/footer.html");%>
+     <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%>
    <form id="form1" runat="server">
     <div>
         <h1>Admin Page</h1>
-        <asp:Button ID="CreateRoleButton" runat="server" Text="Create Role" OnClick="CreateRoleButton_Click" PostBackUrl="~/Management/AdminPanel.aspx" />
-        <asp:TextBox ID="RoleName" runat="server"></asp:TextBox>
+        <h4>
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Management/ManageRoles.aspx">Manage Roles</asp:HyperLink>
+        </h4>
         
         <b>Create a New Role: </b>
+        <asp:TextBox ID="RoleName" runat="server"></asp:TextBox>
         <br />
+        <asp:Button ID="CreateRoleButton" runat="server" Text="Create Role" OnClick="CreateRoleButton_Click" PostBackUrl="~/Management/AdminPanel.aspx" />
+        <p><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink></p>
         <asp:GridView ID="RoleList" runat="server" AutoGenerateColumns="False" OnRowDeleting="RoleList_RowDeleting" >
             <Columns>
                 <asp:TemplateField HeaderText="Role">
@@ -36,13 +40,11 @@
             </Columns>
 
         </asp:GridView>
-        <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink>
         <br />
         <p>
-            <asp:HyperLink ID="createUserLink" runat="server" NavigateUrl="~/SignUp.aspx">Create New User</asp:HyperLink>
+            <asp:HyperLink ID="mainPanelLink" runat="server" NavigateUrl="~/MainPanel.aspx">Create New User</asp:HyperLink>
 
         </p>
-        <asp:HyperLink ID="manageRolesLink" runat="server" NavigateUrl="~/Management/ManageRoles.aspx">Manage Roles</asp:HyperLink>
         <br />
         <asp:Button ID="createTemplateButton" runat="server" PostBackUrl="~/Management/CreateTemplate.aspx" Text="Create Template" />
         <br />

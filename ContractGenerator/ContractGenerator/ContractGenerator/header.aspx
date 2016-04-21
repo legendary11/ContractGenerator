@@ -16,10 +16,11 @@
        <!-- <li><a href="#">Link</a></li> -->
         <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contracts<span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
-            <li><a href="/ViewEdit.aspx">View Contracts</a></li>
-          <!--  <li><a href="#">Add Contracts*</a></li>
-            <li><a href="#">Create New Contract**</a></li>	 -->
-            <li><a href="/Management/CreateContractSections.aspx">Create New Contract Sections**</a></li>
+            <li><a href="/ViewContract.aspx">View Contracts</a></li>
+          <!--  <li><a href="#">Add Contracts*</a></li>-->
+            <li><a href="/Management/CreateTemplate.aspx">Create Contract Template</a></li>
+            <li><a href="/ViewEditTemplate.aspx">View Contract Template</a></li>
+            <li><a href="/ViewEditSection.aspx">View/Edit Contract Section</a></li>
            <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
@@ -27,16 +28,16 @@
           </ul>
         </li>
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Profiles*<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
+              <ul class="dropdown-menu" role="menu">
           <!--  <li><a href="#">View Profiles*</a></li> -->
-            <li><a href="/SignUp.aspx">Add Users</a></li>
+                  <li><a href="/SignUp.aspx">Add Users</a></li>
           <!--  <li><a href="#">Add Manager**</a></li>	-->
            <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
             <li><a href="#">One more separated link</a></li> -->
-          </ul>
-        </li>
+              </ul>
+          </li>
       </ul>
     <!--  <form class="navbar-form navbar-left" role="search">
         <div class="form-group">

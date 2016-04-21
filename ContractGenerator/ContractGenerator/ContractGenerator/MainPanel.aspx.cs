@@ -28,6 +28,7 @@ namespace ContractGenerator
 
                 if (roles.Contains<string>("admin"))
                 {
+                    SectionLink.Visible = true;
                     AdminLink.Visible = true;
                     ContractsLink.Visible = true;
                     ViewProfileLink.Visible = true;
@@ -35,7 +36,7 @@ namespace ContractGenerator
 
                 }
                 else if (roles.Contains<string>("staff"))
-                {
+                {                    
                     ContractsLink.Visible = true;
                     ViewProfileLink.Visible = true;
                     CreateProfileLink.Visible = true;

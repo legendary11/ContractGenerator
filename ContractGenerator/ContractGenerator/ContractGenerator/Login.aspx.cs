@@ -25,6 +25,10 @@ namespace ContractGenerator
                 Login1.Visible = true;
                 Session["user"] = User.Identity.Name;
                 FormsAuthentication.RedirectFromLoginPage(Login1.UserName, true);
+
+                Session["UserName"] = Login1.UserName;
+                string sql = "SELECT UserId FROM Users WHERE UserName = '" + Session["UserName"] + "'";
+                Session["UserID"] = SqlComm.SqlReturn(sql);
             }
             else
             {

@@ -19,8 +19,11 @@ namespace ContractGenerator
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+           
+
             if (Page.User.Identity.IsAuthenticated)
             {
+                
                 string[] roles = Roles.GetRolesForUser();
 
                 if (roles.Contains<string>("admin"))
@@ -30,7 +33,7 @@ namespace ContractGenerator
                 }
                 else if (roles.Contains<string>("staff"))
                 {
-                    if (Page.Title == ("~/adminpanel.aspx") || Page.Title == ("~/manageroles.aspx") || Page.Title == ("~/createtemplate.aspx") || Page.Title == ("~/createcontractsections.aspx"))
+                    if (Page.Title == ("~/ViewEditSection.aspx") || Page.Title == ("~/adminpanel.aspx") || Page.Title == ("~/manageroles.aspx") || Page.Title == ("~/createtemplate.aspx") || Page.Title == ("~/createcontractsections.aspx"))
                     {
                         //MessageBox.Show("Unauthorized Access", "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         Response.Redirect("~/mainpanel.aspx");
@@ -39,7 +42,7 @@ namespace ContractGenerator
                 }
                 else if (roles.Contains<string>("client"))
                 {
-                    if (Page.Title == ("~/adminpanel.aspx") || Page.Title == ("~/manageroles.aspx") || Page.Title == ("~/createtemplate.aspx") || Page.Title == ("~/createcontractsections.aspx"))
+                    if (Page.Title == ("~/ViewEditSection.aspx") || Page.Title == ("~/ViewEditTemplate.aspx") ||Page.Title == ("~/adminpanel.aspx") || Page.Title == ("~/manageroles.aspx") || Page.Title == ("~/createtemplate.aspx") || Page.Title == ("~/createcontractsections.aspx"))
                     {
                         //MessageBox.Show("Unauthorized Access", "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         Response.Redirect("~/mainpanel.aspx");

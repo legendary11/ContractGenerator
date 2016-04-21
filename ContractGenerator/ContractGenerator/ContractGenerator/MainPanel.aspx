@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -12,7 +12,7 @@
     <script src="js/bootstrap.js"></script> 
 </head>
 <body>
-  <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%> 
+    <% Response.WriteFile("~/header.aspx");%><% Response.WriteFile("~/footer.html");%> 
     <form id="form1" runat="server" >
         <div class="container-fluid">
             <div class="row">
@@ -30,7 +30,10 @@
             <asp:LoginStatus ID="LoginStatus1" runat="server" />
         </p>
         <p>
-            <asp:HyperLink ID="ContractsLink" runat="server" NavigateUrl="~/ViewEdit.aspx" Visible="False">Contracts</asp:HyperLink>
+            <asp:HyperLink ID="ContractsLink" runat="server" NavigateUrl="~/ViewContract.aspx" Visible="False">Contracts</asp:HyperLink>
+        </p>
+        <p>
+            <asp:HyperLink ID="SectionLink" runat="server" NavigateUrl="~/ViewEditSection.aspx">View/Edit Contract Section</asp:HyperLink>
         </p>
         <p>
             <asp:HyperLink ID="ViewProfileLink" runat="server" NavigateUrl="~/MyProfile.aspx" Visible="False">View Profile</asp:HyperLink>

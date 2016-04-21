@@ -35,6 +35,8 @@ namespace ContractGenerator
             Membership.CreateUser(RegisterUserWithRoles.UserName,
                RegisterUserWithRoles.Password, RegisterUserWithRoles.Email,
             RegisterUserWithRoles.Question, RegisterUserWithRoles.Answer, true, out p);
+            string sql = "INSERT INTO UserInfo(UserID) SELECT Users.UserId FROM Users  EXCEPT SELECT UserInfo.UserID FROM UserInfo RIGHT JOIN Users ON userInfo.UserID = Users.UserId";
+            SqlComm.SqlExecute(sql);
         }
 
         protected void CreateUserWizard1_ContinueButtonClick(object sender, EventArgs e)
