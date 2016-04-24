@@ -18,8 +18,7 @@
     <div>
         <h1>My Profile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         
         </h1>
-            <p><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink></p>
-        <p>
+         
             <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" CellPadding="4" ForeColor="#333333">
                 <AlternatingItemStyle BackColor="White" ForeColor="#284775" />
                 <EditItemTemplate>

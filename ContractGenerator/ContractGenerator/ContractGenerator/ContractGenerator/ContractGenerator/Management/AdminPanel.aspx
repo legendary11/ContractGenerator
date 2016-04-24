@@ -24,7 +24,6 @@
         <asp:TextBox ID="RoleName" runat="server"></asp:TextBox>
         <br />
         <asp:Button ID="CreateRoleButton" runat="server" Text="Create Role" OnClick="CreateRoleButton_Click" PostBackUrl="~/Management/AdminPanel.aspx" />
-        <p><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink></p>
         <asp:GridView ID="RoleList" runat="server" AutoGenerateColumns="False" OnRowDeleting="RoleList_RowDeleting" CellPadding="4" ForeColor="#333333" GridLines="None" Width="161px" >
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>

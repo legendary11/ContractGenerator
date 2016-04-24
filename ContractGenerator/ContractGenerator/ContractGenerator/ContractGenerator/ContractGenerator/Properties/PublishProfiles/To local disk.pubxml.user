@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\ContractGen\Release</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Code/AppConfiguration.cs">
+      <publishTime>04/24/2016 07:49:21</publishTime>
+    </File>
+    <File Include="App_Data/ContractGen.mdf">
+      <publishTime>04/24/2016 10:10:28</publishTime>
+    </File>
+    <File Include="App_Data/ContractGen_log.ldf">
+      <publishTime>04/24/2016 10:10:28</publishTime>
+    </File>
+    <File Include="App_Data/contract_generator.mdf">
+      <publishTime>04/24/2016 09:20:45</publishTime>
+    </File>
+    <File Include="App_Data/contract_generator_log.ldf">
+      <publishTime>04/24/2016 09:20:45</publishTime>
+    </File>
+    <File Include="bin/ContractGenerator.dll">
+      <publishTime>04/24/2016 10:11:27</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>04/19/2016 02:17:08</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>04/19/2016 02:17:08</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>04/19/2016 02:17:04</publishTime>
+    </File>
+    <File Include="bin/itextsharp.pdfa.dll">
+      <publishTime>04/19/2016 02:17:04</publishTime>
+    </File>
+    <File Include="bin/System.Web.Providers.dll">
+      <publishTime>04/19/2016 02:17:10</publishTime>
+    </File>
+    <File Include="bootstrap.css">
+      <publishTime>04/19/2016 02:17:02</publishTime>
+    </File>
+    <File Include="Contract.aspx">
+      <publishTime>04/19/2016 02:17:02</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>04/24/2016 07:26:42</publishTime>
+    </File>
+    <File Include="footer.html">
+      <publishTime>04/19/2016 02:17:02</publishTime>
+    </File>
+    <File Include="ForgotPassword.aspx">
+      <publishTime>04/23/2016 05:41:46</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>04/19/2016 02:17:02</publishTime>
+    </File>
+    <File Include="header.aspx">
+      <publishTime>04/23/2016 05:58:52</publishTime>
+    </File>
+    <File Include="js/bootstrap.js">
+      <publishTime>04/19/2016 02:17:06</publishTime>
+    </File>
+    <File Include="js/jquery-1.11.3.min.js">
+      <publishTime>04/19/2016 02:17:06</publishTime>
+    </File>
+    <File Include="Login.aspx">
+      <publishTime>04/19/2016 02:17:02</publishTime>
+    </File>
+    <File Include="Logout.aspx">
+      <publishTime>04/22/2016 11:13:08</publishTime>
+    </File>
+    <File Include="MainPanel.aspx">
+      <publishTime>04/24/2016 07:27:16</publishTime>
+    </File>
+    <File Include="Management/AdminPanel.aspx">
+      <publishTime>04/23/2016 05:50:40</publishTime>
+    </File>
+    <File Include="Management/CreateContractSections.aspx">
+      <publishTime>04/19/2016 05:47:04</publishTime>
+    </File>
+    <File Include="Management/CreateTemplate.aspx">
+      <publishTime>04/24/2016 07:31:12</publishTime>
+    </File>
+    <File Include="Management/ManageRoles.aspx">
+      <publishTime>04/23/2016 05:47:20</publishTime>
+    </File>
+    <File Include="MasterPages/master.Master">
+      <publishTime>04/19/2016 02:17:04</publishTime>
+    </File>
+    <File Include="MyProfile.aspx">
+      <publishTime>04/23/2016 05:59:24</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/19/2016 02:17:02</publishTime>
+    </File>
+    <File Include="SignUp.aspx">
+      <publishTime>04/23/2016 06:06:50</publishTime>
+    </File>
+    <File Include="ViewContract.aspx">
+      <publishTime>04/23/2016 05:41:46</publishTime>
+    </File>
+    <File Include="ViewEdit.aspx">
+      <publishTime>04/19/2016 02:17:02</publishTime>
+    </File>
+    <File Include="ViewEditSection.aspx">
+      <publishTime>04/23/2016 06:19:24</publishTime>
+    </File>
+    <File Include="ViewEditTemplate.aspx">
+      <publishTime>04/23/2016 05:45:42</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/24/2016 09:02:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

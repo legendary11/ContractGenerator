@@ -125,9 +125,6 @@
                     </asp:CompleteWizardStep>
                 </WizardSteps>
             </asp:CreateUserWizard>
-            <p>
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink>
-            </p>
 
             <div>
             </div>

@@ -1,5 +1,7 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ManageRoles.aspx.cs" Inherits="ContractGenerator.Management.ManageRoles" %>
-
+﻿<%@ Page Language="C#" AutoEventWireup="true"  MasterPageFile="~/MasterPages/master.Master"  CodeBehind="ManageRoles.aspx.cs" Inherits="ContractGenerator.Management.ManageRoles" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -78,8 +80,8 @@
 
         </p>
 
-        <p><asp:HyperLink ID="MainPanelLink" runat="server" NavigateUrl="~/MainPanel.aspx">Back to Main Panel</asp:HyperLink></p>
     </div>
     </form>
 </body>
 </html>
+</asp:Content>
