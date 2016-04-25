@@ -21,6 +21,7 @@
             <li><a href="/Management/CreateTemplate.aspx">Create Contract Template</a></li>
             <li><a href="/ViewTemplate.aspx">View Contract Template</a></li>
             <li><a href="/ViewEditSection.aspx">View/Edit Contract Section</a></li>
+            <li><a href="/Management/CreateSection.aspx">Create New Section</a></li>
            <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
             <li class="divider"></li>
