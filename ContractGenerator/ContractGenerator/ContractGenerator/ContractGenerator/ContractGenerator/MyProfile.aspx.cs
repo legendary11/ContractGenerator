@@ -11,16 +11,7 @@ namespace ContractGenerator
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!User.Identity.IsAuthenticated)
-            {
-                Response.Redirect("~/login.aspx");
-            }
-            
-        }
-
-        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+                        
         }
     }
 }

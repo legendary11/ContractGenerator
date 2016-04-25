@@ -21,43 +21,16 @@ namespace ContractGenerator
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
             if (User.Identity.IsAuthenticated)
             {
                 string[] roles = Roles.GetRolesForUser();
 
                 if (roles.Contains<string>("admin"))
                 {
-                    SectionLink.Visible = true;
                     AdminLink.Visible = true;
-                    ContractsLink.Visible = true;
-                    ViewProfileLink.Visible = true;
-                    CreateProfileLink.Visible = true;
-
-                }
-                else if (roles.Contains<string>("staff"))
-                {                    
-                    ContractsLink.Visible = true;
-                    ViewProfileLink.Visible = true;
-                    CreateProfileLink.Visible = true;
-                }
-                else if (roles.Contains<string>("client"))
-                {
-                    ContractsLink.Visible = true;
-                    ViewProfileLink.Visible = true;
-                }
-
-                else
-                {
-                    ViewProfileLink.Visible = true;
                 }
             }
-            else
-            {
-                Response.Redirect("login.aspx");
-            }
+
         }
-       
     }
-
 }

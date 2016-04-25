@@ -17,26 +17,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div>
-                   <p>
-                 Welcome to your client page
-
-                   </p>
+                   <h1>Welcome to your client page
+                   </h1>
                 </div>
             </div>
         </div>
-        
-        <p>
-            <asp:HyperLink ID="ContractsLink" runat="server" NavigateUrl="~/ViewContract.aspx" Visible="False">Contracts</asp:HyperLink>
-        </p>
-        <p>
-            <asp:HyperLink ID="SectionLink" runat="server" NavigateUrl="~/ViewEditSection.aspx">View/Edit Contract Section</asp:HyperLink>
-        </p>
-        <p>
-            <asp:HyperLink ID="ViewProfileLink" runat="server" NavigateUrl="~/MyProfile.aspx" Visible="False">View Profile</asp:HyperLink>
-        </p>
-        <p>
-            <asp:HyperLink ID="CreateProfileLink" runat="server" NavigateUrl="~/SignUp.aspx" Visible="False">Create Profile</asp:HyperLink>
-        </p>
         <p>
             <asp:HyperLink ID="AdminLink" runat="server" NavigateUrl="~/Management/AdminPanel.aspx" Visible="False">Adminstrator</asp:HyperLink>
         </p>

@@ -22,11 +22,11 @@ namespace ContractGenerator
             //constructor
         }
 
-        public int templateID {get;set;}
-        public string templateTitle{ get; set; }
-        public string createdDate {get; set; }
-        public string createdBy { get; set; }
-        public string lastModifiedDate { get; set; }
+        public int TemplateID {get;set;}
+        public string TemplateTitle{ get; set; }
+        public string CreatedDate {get; set; }
+        public string CreatedBy { get; set; }
+        public string LastModifiedDate { get; set; }
 
     }
 }

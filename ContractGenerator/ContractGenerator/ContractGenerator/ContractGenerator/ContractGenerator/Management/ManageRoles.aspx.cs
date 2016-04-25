@@ -12,25 +12,17 @@ namespace ContractGenerator.Management
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (User.Identity.IsAuthenticated)
+            if (!Page.IsPostBack)
             {
-                if (!Page.IsPostBack)
-                {
-                    // Bind the users and roles 
-                    BindUsersToUserList();
-                    BindRolesToList();
+                // Bind the users and roles 
+                BindUsersToUserList();
+                BindRolesToList();
 
-                    // Check the selected user's roles 
-                    CheckRolesForSelectedUser();
+                // Check the selected user's roles 
+                CheckRolesForSelectedUser();
 
-                    // Display those users belonging to the currently selected role 
-                    DisplayUsersBelongingToRole();
-
-                }
-            }
-            else
-            {
-                Response.Redirect("login.aspx");
+                // Display those users belonging to the currently selected role 
+                DisplayUsersBelongingToRole();
             }
         }
 
@@ -78,38 +70,38 @@ namespace ContractGenerator.Management
             CheckRolesForSelectedUser();
         }
 
-        protected void RoleList_SelectedIndexChanged(object sender, EventArgs e) 
-        { 
-            DisplayUsersBelongingToRole(); 
+        protected void RoleList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DisplayUsersBelongingToRole();
         }
 
-        protected void RoleCheckBox_CheckChanged(object sender, EventArgs e) 
-        { 
+        protected void RoleCheckBox_CheckChanged(object sender, EventArgs e)
+        {
             // Reference the CheckBox that raised this event 
-            CheckBox RoleCheckBox = sender as CheckBox; 
+            CheckBox RoleCheckBox = sender as CheckBox;
 
             // Get the currently selected user and role 
-            string selectedUserName = UserList.SelectedValue; 
+            string selectedUserName = UserList.SelectedValue;
 
-            string roleName = RoleCheckBox.Text; 
+            string roleName = RoleCheckBox.Text;
 
             // Determine if we need to add or remove the user from this role 
-            if (RoleCheckBox.Checked) 
-            { 
+            if (RoleCheckBox.Checked)
+            {
                 // Add the user to the role 
-                Roles.AddUserToRole(selectedUserName, roleName); 
+                Roles.AddUserToRole(selectedUserName, roleName);
                 // Display a status message 
-                ActionStatus.Text = string.Format("User {0} was added to role {1}.", selectedUserName, roleName); 
-            } 
-            else 
-            { 
+                ActionStatus.Text = string.Format("User {0} was added to role {1}.", selectedUserName, roleName);
+            }
+            else
+            {
                 // Remove the user from the role 
-                Roles.RemoveUserFromRole(selectedUserName, roleName); 
+                Roles.RemoveUserFromRole(selectedUserName, roleName);
                 // Display a status message 
-                ActionStatus.Text = string.Format("User {0} was removed from role {1}.", selectedUserName, roleName); 
+                ActionStatus.Text = string.Format("User {0} was removed from role {1}.", selectedUserName, roleName);
             }
 
-            DisplayUsersBelongingToRole(); 
+            DisplayUsersBelongingToRole();
 
         }
 
@@ -143,7 +135,7 @@ namespace ContractGenerator.Management
             // Display a status message 
             ActionStatus.Text = string.Format("User {0} was removed from role {1}.", UserNameLabel.Text, selectedRoleName);
 
-            CheckRolesForSelectedUser(); 
+            CheckRolesForSelectedUser();
 
         }
 
@@ -190,7 +182,7 @@ namespace ContractGenerator.Management
 
             ActionStatus.Text = string.Format("User {0} was added to role {1}.", userNameToAddToRole, selectedRoleName);
 
-            CheckRolesForSelectedUser(); 
+            CheckRolesForSelectedUser();
 
         }
 

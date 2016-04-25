@@ -42,7 +42,7 @@ namespace ContractGenerator
                 }
                 else if (roles.Contains<string>("client"))
                 {
-                    if (Page.Title == ("~/ViewEditSection.aspx") || Page.Title == ("~/ViewEditTemplate.aspx") ||Page.Title == ("~/adminpanel.aspx") || Page.Title == ("~/manageroles.aspx") || Page.Title == ("~/createtemplate.aspx") || Page.Title == ("~/createcontractsections.aspx"))
+                    if (Page.Title == ("~/ViewEditSection.aspx") || Page.Title == ("~/ViewTemplate.aspx") ||Page.Title == ("~/adminpanel.aspx") || Page.Title == ("~/manageroles.aspx") || Page.Title == ("~/createtemplate.aspx") || Page.Title == ("~/createcontractsections.aspx"))
                     {
                         //MessageBox.Show("Unauthorized Access", "Not Allowed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         Response.Redirect("~/mainpanel.aspx");

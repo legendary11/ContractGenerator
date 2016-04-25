@@ -19,7 +19,7 @@
         <h1>My Profile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         
         </h1>
          
-            <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" CellPadding="4" ForeColor="#333333">
+            <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333">
                 <AlternatingItemStyle BackColor="White" ForeColor="#284775" />
                 <EditItemTemplate>
                     User Name:<asp:Label ID="userNameLabel" runat="server" Text='<%# Eval("[User Name]") %>'></asp:Label>
@@ -46,7 +46,7 @@
                     <asp:Label ID="User_NameLabel" runat="server" Text='<%# Eval("[User Name]") %>' />
                     <br />
                     Frist Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Frist_NameLabel" runat="server" Text='<%# Eval("[Frist Name]") %>' />
+                    <asp:Label ID="First_NameLabel" runat="server" Text='<%# Eval("[First Name]") %>' />
                     <br />
                     Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="Last_NameLabel" runat="server" Text='<%# Eval("[Last Name]") %>' />

@@ -25,6 +25,16 @@ namespace ContractGenerator
             
         }
 
+        public void createTemplate()
+        {
+            string templateTitle = templateNameBox.Text;
+            string createdBy = createdByBox.Text;
+            DateTime dateCreated = Calendar1.SelectedDate;
+           
+            Connect con = new Connect();
+            con.executeInsertQuery("INSERT INTO ContractTemplate ( TemplateTitle, CreatedDate, CreateBy) VALUES ('" + templateTitle + "' , '" + dateCreated + "' , '" + createdBy + "');");
+
+        }
         public int sectionListCount()
         {
             foreach (System.Web.UI.WebControls.ListItem li in SectionList.Items)
@@ -48,7 +58,7 @@ namespace ContractGenerator
             }
             return numOfDetails;
         }
-
+/*
         public void createTemplate()
         {
             int sectionCount = sectionListCount();
@@ -90,7 +100,8 @@ namespace ContractGenerator
 
         }
 
-
+*/
+        /*
             public void CreatePDFFromHTMLFile(string HtmlStream, string FileName)
             {
                 try
@@ -125,6 +136,7 @@ namespace ContractGenerator
                 throw ex;
             }
         }
+        */
 
             protected void Wizard1_FinishButtonClick(object sender, WizardNavigationEventArgs e)
             {

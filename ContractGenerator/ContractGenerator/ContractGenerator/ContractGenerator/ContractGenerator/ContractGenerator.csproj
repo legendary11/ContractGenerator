@@ -114,7 +114,7 @@
     <Content Include="ViewContract.aspx" />
     <Content Include="ViewEditSection.aspx" />
     <Content Include="ViewEdit.aspx" />
-    <Content Include="ViewEditTemplate.aspx" />
+    <Content Include="ViewTemplate.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -267,12 +267,12 @@
     <Compile Include="ViewEdit.aspx.designer.cs">
       <DependentUpon>ViewEdit.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewEditTemplate.aspx.cs">
-      <DependentUpon>ViewEditTemplate.aspx</DependentUpon>
+    <Compile Include="ViewTemplate.aspx.cs">
+      <DependentUpon>ViewTemplate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewEditTemplate.aspx.designer.cs">
-      <DependentUpon>ViewEditTemplate.aspx</DependentUpon>
+    <Compile Include="ViewTemplate.aspx.designer.cs">
+      <DependentUpon>ViewTemplate.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

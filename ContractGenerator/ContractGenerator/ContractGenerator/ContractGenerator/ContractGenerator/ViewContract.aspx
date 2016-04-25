@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<!DOCTYPE html>
+    <!DOCTYPE html>
 
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -17,7 +17,6 @@
      <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%> 
     <form id="form1" runat="server">
     <div>
-    
         In Process</div>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AllowSorting="True" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None" Width="685px">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
@@ -27,7 +26,7 @@
                 <asp:BoundField DataField="CreatedDate" HeaderText="Created Date" SortExpression="CreatedDate" />
                 <asp:BoundField DataField="ModifiedDate" HeaderText="Last Modified Date" SortExpression="ModifiedDate" />
                 <asp:BoundField DataField="CreateBy" HeaderText="Created By" SortExpression="CreateBy" />
-                <asp:ButtonField ButtonType="Button" CommandName="Select" Text="View" HeaderText="View" />
+                <asp:ButtonField ButtonType="Button" CommandName="Select" Text="View" />
             </Columns>
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -45,8 +44,8 @@
                 <asp:SessionParameter DefaultValue="false" Name="Status" SessionField="Status" Type="Boolean" />
             </SelectParameters>
         </asp:SqlDataSource>
-    <p>
-        Signed & Completed</p>
+    <div style="text-align: left">
+        Signed & Completed</div>
     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" SelectCommand="SELECT [ContractTitle], [DomainName], [CreatedDate], [ModifiedDate], [CreateBy] FROM [Contract] WHERE ([Status] = @Status)">
         <SelectParameters>
             <asp:SessionParameter Name="Status" SessionField="Status" Type="Boolean" DefaultValue="True" />
@@ -58,7 +57,7 @@
                 <asp:BoundField DataField="ContractTitle" HeaderText="Contract Title" SortExpression="ContractTitle" />
                 <asp:BoundField DataField="DomainName" HeaderText="Domain Name" SortExpression="DomainName" />
                 <asp:BoundField DataField="CreatedDate" HeaderText="Created Date" SortExpression="CreatedDate" />
-                <asp:BoundField DataField="ModifiedDate" HeaderText="Modified Date" SortExpression="ModifiedDate" />
+                <asp:BoundField DataField="ModifiedDate" HeaderText="Last Modified Date" SortExpression="ModifiedDate" />
                 <asp:BoundField DataField="CreateBy" HeaderText="Created By" SortExpression="CreateBy" />
                 <asp:ButtonField ButtonType="Button" CommandName="Select" HeaderText="View" Text="View" />
                 
@@ -75,9 +74,6 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
         <br />
-        <br />
-        <br />
-    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="PDF" />
     </form>
 </body>
 </html>

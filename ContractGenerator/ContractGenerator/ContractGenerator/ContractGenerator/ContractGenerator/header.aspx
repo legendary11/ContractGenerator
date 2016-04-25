@@ -19,7 +19,7 @@
             <li><a href="/ViewContract.aspx">View Contracts</a></li>
           <!--  <li><a href="#">Add Contracts*</a></li>-->
             <li><a href="/Management/CreateTemplate.aspx">Create Contract Template</a></li>
-            <li><a href="/ViewEditTemplate.aspx">View Contract Template</a></li>
+            <li><a href="/ViewTemplate.aspx">View Contract Template</a></li>
             <li><a href="/ViewEditSection.aspx">View/Edit Contract Section</a></li>
            <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>

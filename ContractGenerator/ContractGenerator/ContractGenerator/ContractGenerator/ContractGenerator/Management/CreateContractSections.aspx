@@ -11,9 +11,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <div>
-        Section ID (int) <asp:TextBox ID ="SectionID" runat="server"></asp:TextBox>
-        </div>
+        
         <div>
         Parent ID (-1 if parent) <asp:TextBox ID ="ParentID" runat="server"></asp:TextBox> 
             </div>
