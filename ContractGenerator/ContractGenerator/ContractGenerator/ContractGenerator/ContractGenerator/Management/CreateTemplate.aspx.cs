@@ -35,6 +35,7 @@ namespace ContractGenerator
             con.executeInsertQuery("INSERT INTO ContractTemplate ( TemplateTitle, CreatedDate, CreateBy) VALUES ('" + templateTitle + "' , '" + dateCreated + "' , '" + createdBy + "');");
 
         }
+        
         public int sectionListCount()
         {
             foreach (System.Web.UI.WebControls.ListItem li in SectionList.Items)
@@ -72,10 +73,17 @@ namespace ContractGenerator
 
                 if (sectionCount > 0)
                 {
-                    //add section title loop
-                    for (int i = 0; i < sectionCount; i++)
+                    int lastSelectedIndex = 0;
+                    string lastSelectedvalue = string.Empty();
+                    
+                    //add selected info to template
+                    
+                    foreach (ListItem sectionItem in SectionList.Items)
                     {
+                        if(sectionItem.Selected)
+                        
                         strHtml += "<h1 style='color: #3A71C4'>" + _buslayer.getSectionTitle(i).ToString() + "</h1>";
+                        if(DetailList.Selected) && (DetailList.Selected)
                         strHtml +=  "<p style='color: #000000'>" + _buslayer.getDetails(i).ToString() + "</p>";
 
                     }
@@ -136,6 +144,34 @@ namespace ContractGenerator
                 throw ex;
             }
         }
+        */
+        
+        /* Filter results for each wizard section // work in progress
+        
+        public void OnActiveStepChanged(object sender, EventArgs e)
+        {
+            if(Wizard1.Activestep.Title == "Add Contract Detail")
+            {
+                int sectionCount = SectionListCount();
+                int count = 0;
+                while(count <= sectionCount)
+                {
+                    
+                    DetailList.DataSource = 
+                    DetailList.DataBind();
+                }
+            }
+        }
+          
+          public void DetailID(int sectionID, detailID)
+          {
+            int detailID = detailID;
+            int sectionID = sectionID;
+            string details;
+            connect con = new Connect();
+            con.executeSelectQuery("SELECT FROM ContractSection (Details) VALUES ('" + details + "') WHERE ( ) ;");
+
+          }
         */
 
             protected void Wizard1_FinishButtonClick(object sender, WizardNavigationEventArgs e)
