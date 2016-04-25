@@ -52,10 +52,7 @@
 
         </asp:GridView>
         <br />
-        <p>
-            <asp:HyperLink ID="mainPanelLink" runat="server" NavigateUrl="~/MainPanel.aspx">Create New User</asp:HyperLink>
-
-        </p>
+        
         <br />
         <asp:Button ID="createTemplateButton" runat="server" PostBackUrl="~/Management/CreateTemplate.aspx" Text="Create Template" />
         <br />
