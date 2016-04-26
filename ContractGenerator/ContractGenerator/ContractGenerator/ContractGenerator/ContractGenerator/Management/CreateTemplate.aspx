@@ -13,7 +13,7 @@
     <div>
     
         <h1>Create contract Template</h1><br />
-        <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="6" OnFinishButtonClick="Wizard1_FinishButtonClick" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" FinishDestinationPageUrl="~/Management/ViewTemplate.aspx" FinishPreviousButtonType="Link">
+        <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="0" OnFinishButtonClick="Wizard1_FinishButtonClick" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" FinishDestinationPageUrl="~/Management/ViewTemplate.aspx" FinishPreviousButtonType="Link">
             <HeaderStyle BackColor="#284E98" BorderColor="#EFF3FB" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" Font-Size="0.9em" ForeColor="White" HorizontalAlign="Center" />
             <NavigationButtonStyle BackColor="White" BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" />
             <SideBarButtonStyle BackColor="#507CD1" Font-Names="Verdana" ForeColor="White" />

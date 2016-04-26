@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
+  <parameter name="ContractGen-Web.config Connection String" description="ContractGen Connection String used in web.config by the application to access the database." defaultValue="Data Source=contractgeninstance.cu3oml77oncj.us-west-2.rds.amazonaws.com,1433;Initial Catalog=ContractGen;Integrated Security=False;User Id=mtlong2s;Password=SEMOProject;MultipleActiveResultSets=True" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="C:\\Users\\nmcc1_000\\OneDrive\\UI450\\ContractGenerator\\ContractGenerator\\ContractGenerator\\ContractGenerator\\ContractGenerator\\ContractGenerator\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ContractGen']/@connectionString" />
   </parameter>
 </parameters>

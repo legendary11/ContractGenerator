@@ -25,6 +25,7 @@
         </li>
           <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Administrator<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
+                  <li><a href="/Management/AdminPanel.aspx">Admin Panel</a></li>
                   <li><a href="/Management/CreateTemplate.aspx">Create Contract Template</a></li>
                   <li><a href="/Management/ViewTemplate.aspx">View Contract Template</a></li>
                   <li><a href="/ViewEditSection.aspx">View/Edit Contract Section</a></li>
