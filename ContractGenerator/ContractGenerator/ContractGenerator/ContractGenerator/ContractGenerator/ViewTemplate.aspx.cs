@@ -32,8 +32,7 @@ namespace ContractGenerator
         private void DisplayTemplatesInGrid()
         {
             Session["TemplateID"] = TemplateList.SelectedValue;
-
-            TemplateGridView.DataSource = source1;
+            TemplateGridView.DataSource = datasource1;
             TemplateGridView.DataBind();
             
         }

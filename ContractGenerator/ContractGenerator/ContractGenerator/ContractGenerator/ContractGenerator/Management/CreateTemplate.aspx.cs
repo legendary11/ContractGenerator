@@ -179,6 +179,13 @@ namespace ContractGenerator
                 createTemplate();
             }
 
+            protected void SectionList_SelectedIndexChanged(object sender, EventArgs e)
+            {
+                int sectionID = SectionList.SelectedIndex;
+                Connect con = new Connect();
+                con.executeInsertQuery("INSERT INTO ContractTemplateSections (  SectionID ) VALUES ('" + sectionID + "');");
+            }
+
            
     }
 }

@@ -15,7 +15,7 @@
      <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%>
    <form id="form1" runat="server">
     <div>
-        <h1>Admin Page</h1>
+        <h1 class="text-left">Admin Page</h1>
         <h4>
         <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Management/ManageRoles.aspx">Manage Roles</asp:HyperLink>
         </h4>

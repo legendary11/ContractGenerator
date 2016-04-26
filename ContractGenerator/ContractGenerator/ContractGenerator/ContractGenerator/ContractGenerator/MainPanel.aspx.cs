@@ -21,15 +21,6 @@ namespace ContractGenerator
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (User.Identity.IsAuthenticated)
-            {
-                string[] roles = Roles.GetRolesForUser();
-
-                if (roles.Contains<string>("admin"))
-                {
-                    AdminLink.Visible = true;
-                }
-            }
 
         }
     }

@@ -25,7 +25,7 @@
                     <asp:TextBox ID="templateNameBox" runat="server"></asp:TextBox>
                 </asp:WizardStep>
                 <asp:WizardStep ID="ChooseSectionStep" runat="server" Title="Choose Sections">
-                    <asp:CheckBoxList ID="SectionList" runat="server" DataSourceID="ContractGen" DataTextField="SectionTitle" DataValueField="SectionTitle"></asp:CheckBoxList>
+                    <asp:CheckBoxList ID="SectionList" runat="server" DataSourceID="ContractGen" DataTextField="SectionTitle" DataValueField="SectionTitle" AutoPostBack="True" OnSelectedIndexChanged="SectionList_SelectedIndexChanged"></asp:CheckBoxList>
                     <asp:SqlDataSource ID="ContractGen" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" SelectCommand="SELECT [SectionTitle] FROM [ContractSection]"></asp:SqlDataSource>
                 </asp:WizardStep>
 

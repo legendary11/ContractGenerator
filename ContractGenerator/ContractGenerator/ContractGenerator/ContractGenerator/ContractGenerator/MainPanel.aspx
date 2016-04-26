@@ -17,14 +17,11 @@
         <div class="container-fluid">
             <div class="row">
                 <div>
-                   <h1>Welcome to your client page
+                   <h1 class="text-left">Welcome to your client page
                    </h1>
                 </div>
             </div>
         </div>
-        <p>
-            <asp:HyperLink ID="AdminLink" runat="server" NavigateUrl="~/Management/AdminPanel.aspx" Visible="False">Adminstrator</asp:HyperLink>
-        </p>
     </form>
 </body>
 </html>
