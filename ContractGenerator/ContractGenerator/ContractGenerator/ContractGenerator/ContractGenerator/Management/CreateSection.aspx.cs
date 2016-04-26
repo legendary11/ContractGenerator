@@ -17,7 +17,9 @@ namespace ContractGenerator.Management
         public void createSection()
         {
             Connect con = new Connect();
-            con.executeInsertQuery("INSERT INTO ContractSection (ParentID, SectionTitle, SectionDetail, Initial, Signature, OptOut, EntryBox) VALUES ('" + parentID + "', '" + sectionNameBox + "', '" + detailBox + "', '" + Initial + "', '" + Signature + "', '" + OptOut + "', '" + EntryBox + "');");
+            string sectionTitle = sectionNameBox.Text;
+            string description = detailBox.Text;
+            con.executeInsertQuery("INSERT INTO ContractSection ( SectionTitle, SectionDetail, Initial, Signature, OptOut, EntryBox) VALUES ('" + sectionTitle + "', '" + description + "');");
 
         }
 

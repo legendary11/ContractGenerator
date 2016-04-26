@@ -18,12 +18,12 @@ namespace ContractGenerator
     public partial class master : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
-        {
-           
-
+        {   
             if (Page.User.Identity.IsAuthenticated)
             {
-                
+                Session["user"] = Page.User.Identity.Name;
+                string sql = "SELECT UserId FROM Users WHERE UserName = '" + Session["user"] + "'";
+                Session["UserID"] = SqlComm.SqlReturn(sql);
                 string[] roles = Roles.GetRolesForUser();
 
                 if (roles.Contains<string>("admin"))

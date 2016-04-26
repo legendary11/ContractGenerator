@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <parameters>
   <setParameter name="IIS Web Application Name" value="Default Web Site/" />
-  <setParameter name="ContractGen-Web.config Connection String" value="Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\Databases\ContractGen.mdf;Integrated Security=True;Connect Timeout=30" />
+  <setParameter name="ContractGen-Web.config Connection String" value="Data Source=contractgeninstance.cu3oml77oncj.us-west-2.rds.amazonaws.com,1433;Initial Catalog=ContractGen;Integrated Security=False;User Id=mtlong2s;Password=SEMOProject;MultipleActiveResultSets=True" />
 </parameters>

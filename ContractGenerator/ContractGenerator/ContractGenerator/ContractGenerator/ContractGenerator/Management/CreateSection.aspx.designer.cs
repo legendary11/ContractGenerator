@@ -94,40 +94,85 @@ namespace ContractGenerator.Management {
         protected global::System.Web.UI.WebControls.WizardStep AddDetailStep2;
         
         /// <summary>
-        /// parentID control.
+        /// parentIDLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox parentID;
+        protected global::System.Web.UI.WebControls.Label parentIDLabel;
         
         /// <summary>
-        /// Initial control.
+        /// parentIDBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Initial;
+        protected global::System.Web.UI.WebControls.TextBox parentIDBox;
         
         /// <summary>
-        /// Signature control.
+        /// initialLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Signature;
+        protected global::System.Web.UI.WebControls.Label initialLabel;
         
         /// <summary>
-        /// OptOut control.
+        /// initialCheckBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox OptOut;
+        protected global::System.Web.UI.WebControls.CheckBox initialCheckBox;
+        
+        /// <summary>
+        /// signatureLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label signatureLabel;
+        
+        /// <summary>
+        /// signBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox signBox;
+        
+        /// <summary>
+        /// optoutLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label optoutLabel;
+        
+        /// <summary>
+        /// optoutBox2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox optoutBox2;
+        
+        /// <summary>
+        /// entryBoxLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label entryBoxLabel;
         
         /// <summary>
         /// EntryBox control.
@@ -136,6 +181,6 @@ namespace ContractGenerator.Management {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox EntryBox;
+        protected global::System.Web.UI.WebControls.CheckBox EntryBox;
     }
 }

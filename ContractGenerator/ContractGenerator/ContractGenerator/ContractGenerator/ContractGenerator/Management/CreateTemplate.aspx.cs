@@ -27,13 +27,11 @@ namespace ContractGenerator
 
         public void createTemplate()
         {
-            string templateTitle = templateNameBox.Text;
-            string createdBy = createdByBox.Text;
-            DateTime dateCreated = Calendar1.SelectedDate;
-           
+            string templateTitle = templateNameBox.Text; 
+            string createdBy = createdByBox.Text; 
+            DateTime dateCreated = Calendar1.SelectedDate; 
             Connect con = new Connect();
-            con.executeInsertQuery("INSERT INTO ContractTemplate ( TemplateTitle, CreatedDate, CreateBy) VALUES ('" + templateTitle + "' , '" + dateCreated + "' , '" + createdBy + "');");
-
+            con.executeInsertQuery("INSERT INTO ContractTemplate ( TemplateTitle, CreatedDate, CreateBy) VALUES ('" + templateTitle + "' , '" + dateCreated + "', '" + createdBy + "');");
         }
         
         public int sectionListCount()
@@ -59,8 +57,8 @@ namespace ContractGenerator
             }
             return numOfDetails;
         }
-/*
-        public void createTemplate()
+
+        public void createPDF()
         {
             int sectionCount = sectionListCount();
             int detailCount = detailListCount();
@@ -68,28 +66,23 @@ namespace ContractGenerator
             try
             {
                 string strHtml = "<html><head></head><body>";
-               
+
                 string close = "</body>";
 
                 if (sectionCount > 0)
                 {
-                    int lastSelectedIndex = 0;
-                    string lastSelectedvalue = string.Empty();
-                    
-                    //add selected info to template
-                    
-                    foreach (ListItem sectionItem in SectionList.Items)
+                    //add section title loop 
+                    for (int i = 0; i < sectionCount; i++)
                     {
-                        if(sectionItem.Selected)
-                        
                         strHtml += "<h1 style='color: #3A71C4'>" + _buslayer.getSectionTitle(i).ToString() + "</h1>";
-                        if(DetailList.Selected) && (DetailList.Selected)
-                        strHtml +=  "<p style='color: #000000'>" + _buslayer.getDetails(i).ToString() + "</p>";
+                        strHtml += "<p style='color: #000000'>" + _buslayer.getDetails(i).ToString() + "</p>";
+
 
                     }
 
                 }
                 strHtml += close;
+
 
                 string pdfFileName = Request.PhysicalApplicationPath + "Contract.pdf";
 
@@ -108,8 +101,6 @@ namespace ContractGenerator
 
         }
 
-*/
-        /*
             public void CreatePDFFromHTMLFile(string HtmlStream, string FileName)
             {
                 try
@@ -144,7 +135,6 @@ namespace ContractGenerator
                 throw ex;
             }
         }
-        */
         
         /* Filter results for each wizard section // work in progress
         
@@ -183,7 +173,12 @@ namespace ContractGenerator
             {
                 int sectionID = SectionList.SelectedIndex;
                 Connect con = new Connect();
-                con.executeInsertQuery("INSERT INTO ContractTemplateSections (  SectionID ) VALUES ('" + sectionID + "');");
+                con.executeInsertQuery("INSERT INTO ContractTemplateSections ( SectionID ) VALUES ('" + sectionID + "');");
+            }
+
+            protected void DwnldPDFButton_Click(object sender, EventArgs e)
+            {
+                createPDF();
             }
 
            

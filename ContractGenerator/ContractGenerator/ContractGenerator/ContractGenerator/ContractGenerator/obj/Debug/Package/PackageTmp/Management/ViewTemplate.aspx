@@ -34,8 +34,8 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="datasource1" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" 
-            SelectCommand="SELECT B.* from CSinCT A Join ContractSection B on A.SectionID = B.SectionID Join ContractTemplate C on A.TemplateID = C.TemplateID where A.TemplateID = @TemplateID">
+        <asp:SqlDataSource ID="datasource1" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen%>" 
+            SelectCommand="SELECT B.* from ContractTemplateSections A Join ContractSection B on A.SectionID = B.SectionID Join ContractTemplate C on A.TemplateID = C.TemplateID where A.TemplateID = @TemplateID">
             <SelectParameters>
                 <asp:SessionParameter Name="TemplateID" SessionField="TemplateID" Type="Int32" />
             </SelectParameters>

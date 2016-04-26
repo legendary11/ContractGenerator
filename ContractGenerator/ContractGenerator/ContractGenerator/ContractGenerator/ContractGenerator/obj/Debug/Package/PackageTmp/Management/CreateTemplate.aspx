@@ -13,7 +13,7 @@
     <div>
     
         <h1>Create contract Template</h1><br />
-        <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="0" OnFinishButtonClick="Wizard1_FinishButtonClick" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" FinishDestinationPageUrl="~/Management/AdminPanel.aspx">
+        <asp:Wizard ID="Wizard1" runat="server" ActiveStepIndex="6" OnFinishButtonClick="Wizard1_FinishButtonClick" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" FinishDestinationPageUrl="~/Management/ViewTemplate.aspx" FinishPreviousButtonType="Link">
             <HeaderStyle BackColor="#284E98" BorderColor="#EFF3FB" BorderStyle="Solid" BorderWidth="2px" Font-Bold="True" Font-Size="0.9em" ForeColor="White" HorizontalAlign="Center" />
             <NavigationButtonStyle BackColor="White" BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" />
             <SideBarButtonStyle BackColor="#507CD1" Font-Names="Verdana" ForeColor="White" />
@@ -25,7 +25,7 @@
                     <asp:TextBox ID="templateNameBox" runat="server"></asp:TextBox>
                 </asp:WizardStep>
                 <asp:WizardStep ID="ChooseSectionStep" runat="server" Title="Choose Sections">
-                    <asp:CheckBoxList ID="SectionList" runat="server" DataSourceID="ContractGen" DataTextField="SectionTitle" DataValueField="SectionTitle"></asp:CheckBoxList>
+                    <asp:CheckBoxList ID="SectionList" runat="server" DataSourceID="ContractGen" DataTextField="SectionTitle" DataValueField="SectionTitle" AutoPostBack="True" OnSelectedIndexChanged="SectionList_SelectedIndexChanged"></asp:CheckBoxList>
                     <asp:SqlDataSource ID="ContractGen" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" SelectCommand="SELECT [SectionTitle] FROM [ContractSection]"></asp:SqlDataSource>
                 </asp:WizardStep>
 
@@ -39,6 +39,9 @@
                 </asp:WizardStep>
                 <asp:WizardStep ID="DateCreatedStep" runat="server" Title="Date Created">
                     <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
+                </asp:WizardStep>
+                <asp:WizardStep ID="DwnldPDFStep" runat="server" Title="Download PDF">
+                        <asp:Button ID="DwnldPDFButton" runat="server" Text="Button" OnClick="DwnldPDFButton_Click" style="height: 26px" />
                 </asp:WizardStep>
                 <asp:WizardStep runat="server" StepType="Finish" Title="Finish">
                 </asp:WizardStep>
