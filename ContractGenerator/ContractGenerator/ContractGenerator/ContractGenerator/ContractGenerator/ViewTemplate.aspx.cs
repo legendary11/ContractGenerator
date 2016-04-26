@@ -7,25 +7,35 @@ using System.Web.UI.WebControls;
 
 namespace ContractGenerator
 {
-    public partial class ViewEditTemplate : System.Web.UI.Page
+   public partial class ViewEditTemplate : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                BindDropDownList();
+                DisplayTemplatesInGrid();
+            }
         }
 
         protected void TemplateList_SelectedIndexChanged(object sender, EventArgs e)
-        {
+        {           
+           DisplayTemplatesInGrid();
+        }
 
-            //Session["TemplateID"] = DropDownList1.SelectedValue;
+        private void BindDropDownList()
+        {
+            TemplateList.DataSource = SqlDataSource2;
+            TemplateList.DataBind();
         }
 
         private void DisplayTemplatesInGrid()
         {
-            string selectedTemplate = TemplateList.SelectedValue;
+            Session["TemplateID"] = TemplateList.SelectedValue;
 
-            TemplateGridView.DataSource = selectedTemplate;
+            TemplateGridView.DataSource = source1;
             TemplateGridView.DataBind();
+            
         }
     }
 }
