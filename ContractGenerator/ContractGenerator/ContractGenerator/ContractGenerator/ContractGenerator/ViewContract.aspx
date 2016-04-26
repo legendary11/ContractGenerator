@@ -21,6 +21,7 @@
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AllowSorting="True" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None" Width="685px">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
+                <asp:BoundField DataField="UserName" HeaderText="User Name" SortExpression="UserName" />
                 <asp:BoundField DataField="ContractTitle" HeaderText="Contract Title" SortExpression="ContractTitle" />
                 <asp:BoundField DataField="DomainName" HeaderText="Domain Name" SortExpression="DomainName" />
                 <asp:BoundField DataField="CreatedDate" HeaderText="Created Date" SortExpression="CreatedDate" />
@@ -54,6 +55,7 @@
         <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" CellPadding="4" ForeColor="#333333" GridLines="None" Width="685px" >
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
+                <asp:BoundField DataField="UserName" HeaderText="User Name" SortExpression="UserName" />
                 <asp:BoundField DataField="ContractTitle" HeaderText="Contract Title" SortExpression="ContractTitle" />
                 <asp:BoundField DataField="DomainName" HeaderText="Domain Name" SortExpression="DomainName" />
                 <asp:BoundField DataField="CreatedDate" HeaderText="Created Date" SortExpression="CreatedDate" />
