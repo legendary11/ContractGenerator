@@ -15,6 +15,7 @@
 <body>
      <% Response.WriteFile("~/header.aspx");%>
     <% Response.WriteFile("~/footer.html");%>
+    <h1>Contract Selecton View / Edit</h1><br />
     <form id="form1" runat="server">
     <div>
     

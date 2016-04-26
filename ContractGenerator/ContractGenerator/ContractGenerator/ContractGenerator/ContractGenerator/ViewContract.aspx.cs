@@ -33,7 +33,7 @@ namespace ContractGenerator
             {
                 SqlDataSource1.SelectCommand = "SELECT ContractTitle, DomainName, CreatedDate, ModifiedDate, CreateBy FROM Contract, Users WHERE Users.UserID = Contract.UserID AND Status = 'false' AND UserID = '" + Session["UserID"] + "'";
                 GridView1.DataBind();
-                GridView1.Columns[0].Visible = false;
+               
                 SqlDataSource1.SelectCommand = "SELECT ContractTitle, DomainName, CreatedDate, ModifiedDate, CreateBy FROM Contract, Users WHERE Users.UserID = Contract.UserID AND Status = 'true' AND UserID = '" + Session["UserID"] + "'";
                 GridView1.DataBind();
                 GridView1.Columns[0].Visible = false;

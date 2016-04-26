@@ -36,6 +36,7 @@
               <ul class="dropdown-menu" role="menu">
           <!--  <li><a href="#">View Profiles*</a></li> -->
                   <li><a href="/SignUp.aspx">Add Users</a></li>
+                   <li><a href="/MyProfile.aspx">My Profile</a></li>
           <!--  <li><a href="#">Add Manager**</a></li>	-->
            <!--  <li class="divider"></li>
             <li><a href="#">Separated link</a></li>
