@@ -77,10 +77,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\ContractGen.mdf" />
-    <Content Include="App_Data\ContractGen_log.ldf">
-      <DependentUpon>ContractGen.mdf</DependentUpon>
-    </Content>
     <Content Include="bootstrap.css" />
     <Content Include="Logout.aspx" />
     <Content Include="Management\CreateSection.aspx" />
@@ -276,6 +272,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
