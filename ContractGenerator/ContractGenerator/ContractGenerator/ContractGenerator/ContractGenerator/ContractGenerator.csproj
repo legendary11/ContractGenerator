@@ -108,7 +108,7 @@
     <Content Include="Global.asax" />
     <Content Include="SignUp.aspx" />
     <Content Include="ViewContract.aspx" />
-    <Content Include="ViewEditSection.aspx" />
+    <Content Include="Management\ViewEditSection.aspx" />
     <Content Include="ViewEdit.aspx" />
     <Content Include="Management\ViewTemplate.aspx" />
     <Content Include="ViewSwitcher.ascx" />
@@ -249,11 +249,11 @@
     <Compile Include="ViewContract.aspx.designer.cs">
       <DependentUpon>ViewContract.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ViewEditSection.aspx.cs">
+    <Compile Include="Management\ViewEditSection.aspx.cs">
       <DependentUpon>ViewEditSection.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ViewEditSection.aspx.designer.cs">
+    <Compile Include="Management\ViewEditSection.aspx.designer.cs">
       <DependentUpon>ViewEditSection.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewEdit.aspx.cs">

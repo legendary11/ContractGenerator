@@ -39,17 +39,11 @@
             <SortedDescendingCellStyle BackColor="#FFFDF8" />
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" SelectCommand="SELECT [ContractTitle], [DomainName], [CreatedDate], [ModifiedDate], [CreateBy] FROM [Contract] WHERE ([Status] = @Status)">
-            <SelectParameters>
-                <asp:SessionParameter DefaultValue="false" Name="Status" SessionField="Status" Type="Boolean" />
-            </SelectParameters>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" >
         </asp:SqlDataSource>
     <div style="text-align: left">
         Signed & Completed</div>
-    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" SelectCommand="SELECT [ContractTitle], [DomainName], [CreatedDate], [ModifiedDate], [CreateBy] FROM [Contract] WHERE ([Status] = @Status)">
-        <SelectParameters>
-            <asp:SessionParameter Name="Status" SessionField="Status" Type="Boolean" DefaultValue="True" />
-        </SelectParameters>
+    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" >
     </asp:SqlDataSource>
         <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" CellPadding="4" ForeColor="#333333" GridLines="None" Width="685px" >
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
