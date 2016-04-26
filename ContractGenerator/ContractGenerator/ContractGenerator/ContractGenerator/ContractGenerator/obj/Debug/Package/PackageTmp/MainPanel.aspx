@@ -19,6 +19,8 @@
                 <div>
                    <h1 class="text-left">Welcome to your client page
                    </h1>
+                   <br />
+                    <img src="img/pen.jpg" width="auto" height="auto" alt="">
                 </div>
             </div>
         </div>

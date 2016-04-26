@@ -7,7 +7,6 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title>Action Panel</title>
    <link href="bootstrap.css" rel="stylesheet"/>
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.js"></script> 
@@ -15,12 +14,14 @@
 
 <body>
      <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%> 
+    <h1>View Contract</h1><br />
     <form id="form1" runat="server">
     <div>
         In Process</div>
         <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" AllowSorting="True" ShowFooter="True" CellPadding="4" ForeColor="#333333" GridLines="None" Width="685px">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
+                <asp:BoundField DataField="UserName" HeaderText="User Name" SortExpression="UserName" />
                 <asp:BoundField DataField="ContractTitle" HeaderText="Contract Title" SortExpression="ContractTitle" />
                 <asp:BoundField DataField="DomainName" HeaderText="Domain Name" SortExpression="DomainName" />
                 <asp:BoundField DataField="CreatedDate" HeaderText="Created Date" SortExpression="CreatedDate" />
@@ -40,6 +41,7 @@
             <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
         </asp:GridView>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ContractGen %>" >
+
         </asp:SqlDataSource>
     <div style="text-align: left">
         Signed & Completed</div>
@@ -48,6 +50,7 @@
         <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource2" CellPadding="4" ForeColor="#333333" GridLines="None" Width="685px" >
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
+                <asp:BoundField DataField="UserName" HeaderText="User Name" SortExpression="UserName" />
                 <asp:BoundField DataField="ContractTitle" HeaderText="Contract Title" SortExpression="ContractTitle" />
                 <asp:BoundField DataField="DomainName" HeaderText="Domain Name" SortExpression="DomainName" />
                 <asp:BoundField DataField="CreatedDate" HeaderText="Created Date" SortExpression="CreatedDate" />
