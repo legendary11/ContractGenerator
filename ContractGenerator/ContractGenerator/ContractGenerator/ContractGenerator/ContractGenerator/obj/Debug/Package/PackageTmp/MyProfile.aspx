@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/master.Master" CodeBehind="MyProfile.aspx.cs" Inherits="ContractGenerator.MyProfile" %>
+<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/MasterPages/master.Master" CodeBehind="MyProfile.aspx.cs" Inherits="ContractGenerator.MyProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -12,68 +12,191 @@
     <script src="js/bootstrap.js"></script>
 </head>
 <body>
-    <% Response.WriteFile("~/header.aspx");%>
-    <% Response.WriteFile("~/footer.html");%>
+    <% Response.WriteFile("~/header.aspx");%>    <% Response.WriteFile("~/footer.html");%>
     <form id="form1" runat="server">
     <div>
-        <h1>My Profile&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;         
-        </h1>
          
-            <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333">
+            <asp:DataList ID="DataList1" runat="server" DataSourceID="SqlDataSource1" CellPadding="4" ForeColor="#333333"
+                 OnEditing="OnEditing" OnCanceling="OnCanceling" OnUpdating="OnUpdating" >
                 <AlternatingItemStyle BackColor="White" ForeColor="#284775" />
-                <EditItemTemplate>
-                    User Name:<asp:Label ID="userNameLabel" runat="server" Text='<%# Eval("[User Name]") %>'></asp:Label>
-                    <br />
-                    First Name:<asp:TextBox ID="firstNameBox" runat="server" Text='<%# Eval("[First Name]") %>'></asp:TextBox>
-                    <br />
-                    Last Name:<asp:TextBox ID="TextBox2" runat="server" Text='<%# Eval("[Last Name]") %>'></asp:TextBox>
-                    <br />
-                    Company Name:<asp:TextBox ID="TextBox3" runat="server" Text='<%# Eval("[Company Name]") %>'></asp:TextBox>
-                    <br />
-                    Address:<asp:TextBox ID="TextBox4" runat="server" Text='<%# Eval("Address") %>'></asp:TextBox>
-                    <br />
-                    Phone:<asp:TextBox ID="TextBox5" runat="server" Text='<%# Eval("Phone") %>'></asp:TextBox>
-                    <br />
-                    Fax:<asp:TextBox ID="TextBox6" runat="server" Text='<%# Eval("Fax") %>'></asp:TextBox>
-                    <br />
-                    Email:<asp:TextBox ID="TextBox7" runat="server" Text='<%# Eval("Email") %>'></asp:TextBox>
-                </EditItemTemplate>
                 <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
                 <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+                <HeaderTemplate>
+                    My Profile
+                </HeaderTemplate>
                 <ItemStyle BackColor="#F7F6F3" ForeColor="#333333" />
                 <ItemTemplate>
-                    User Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="User_NameLabel" runat="server" Text='<%# Eval("[User Name]") %>' />
-                    <br />
-                    Frist Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="First_NameLabel" runat="server" Text='<%# Eval("[First Name]") %>' />
-                    <br />
-                    Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Last_NameLabel" runat="server" Text='<%# Eval("[Last Name]") %>' />
-                    <br />
-                    Company Name:&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Company_NameLabel" runat="server" Text='<%# Eval("[Company Name]") %>' />
-                    <br />
-                    Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="AddressLabel" runat="server" Text='<%# Eval("Address") %>' />
-                    <br />
-                    Phone:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="PhoneLabel" runat="server" Text='<%# Eval("Phone") %>' />
-                    <br />
-                    Fax:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="FaxLabel" runat="server" Text='<%# Eval("Fax") %>' />
-                    <br />
-                    Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="EmailLabel" runat="server" Text='<%# Eval("Email") %>' />
-                    <br />
-                    Create Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Create_DateLabel" runat="server" Text='<%# Eval("[Create Date]") %>' />
-                    <br />
-                    Login Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Login_DateLabel" runat="server" Text='<%# Eval("[Login Date]") %>' />
-                    <br />
-                    <br />
+                    <table style="border-collapse:collapse">
+                        <tr>
+                            <td align="left" style="width:150px">
+                                User Name:
+                            </td>
+                            <td align="left" style="width:200px">
+                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("[User Name]") %>' />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width:150px">
+                            </td>
+                            <td align="left" style="width:200px">
+                                <asp:Label ID="Label2" runat="server" Text='<%# Eval("[Frist Name]") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Last Name:
+                            </td>
+                            <td>
+                                <asp:Label ID="Label3" runat="server" Text='<%# Eval("[Last Name]") %>' />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Company Name:
+                            </td>
+                            <td>
+                                <asp:Label ID="Label4" runat="server" Text='<%# Eval("[Company Name]") %>' />                    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Address:
+                            </td>
+                            <td>
+                                <asp:Label ID="Label5" runat="server" Text='<%# Eval("Address") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Phone:
+                            </td>
+                            <td>
+                                <asp:Label ID="Label6" runat="server" Text='<%# Eval("Phone") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Fax:
+                            </td>
+                            <td>
+                                <asp:Label ID="Label7" runat="server" Text='<%# Eval("Fax") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Email:
+                            </td>
+                            <td>
+                                <asp:Label ID="EmailLabel" runat="server" Text='<%# Eval("Email") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Create Date:
+                            </td>
+                            <td>
+                                <asp:Label ID="Create_DateLabel" runat="server" Text='<%# Eval("[Create Date]") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Login Date:
+                            </td>
+                            <td>
+                                <asp:Label ID="Label8" runat="server" Text='<%# Eval("[Login Date]") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                               <asp:Button ID="btnEdit" runat="server" Text='Edit' CommandName="OnEditing" />
+                            </td>
+                        </tr>
+                    </table>
                 </ItemTemplate>
+                <EditItemTemplate>
+                    <table style="border-collapse:collapse">
+                        <tr>
+                            <td align="left" style="width: 150px">
+                                User Name:
+                            </td>
+                            <td align="left" style="width: 200px">
+                                <asp:Label ID="Label1" runat="server" Text='<%# Eval("[User Name]") %>' />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="left" style="width: 150px">
+                            </td>
+                            <td align="left" style="width: 200px">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Last Name:
+                            </td>
+                            <td>
+                                <asp:TextBox ID="Label3" runat="server" Text='<%# Eval("[Last Name]") %>' />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Company Name:
+                            </td>
+                            <td>
+                                <asp:TextBox ID="Label4" runat="server" Text='<%# Eval("[Company Name]") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Address:
+                            </td>
+                            <td>
+                                <asp:TextBox ID="Label5" runat="server" Text='<%# Eval("Address") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phone:
+                            </td>
+                            <td>
+                                <asp:TextBox ID="Label6" runat="server" Text='<%# Eval("Phone") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Fax:
+                            </td>
+                            <td>
+                                <asp:TextBox ID="Label7" runat="server" Text='<%# Eval("Fax") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email:
+                            </td>
+                            <td>
+                                <asp:TextBox ID="EmailLabel" runat="server" Text='<%# Eval("Email") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Create Date:
+                            </td>
+                            <td>
+                                <asp:Label ID="Create_DateLabel" runat="server" Text='<%# Eval("[Create Date]") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Login Date:
+                            </td>
+                            <td>
+                                <asp:Label ID="Label8" runat="server" Text='<%# Eval("[Login Date]") %>' />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center" >
+                                <asp:Button ID="btnUpdate" runat="server" Text='Update' CommandName="Update" Width="75" />
+                                <asp:Button ID="btnCancel" runat="server" Text='Cancel' CommandName="Cancel" Width="75" />
+                            </td>
+                        </tr>
+                    </table>
+                </EditItemTemplate>
                 <SelectedItemStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
                 <SeparatorStyle Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False" ForeColor="Black" />
             </asp:DataList>
@@ -82,7 +205,8 @@
                     <asp:SessionParameter Name="userID" SessionField="UserID" />
                 </SelectParameters>
             </asp:SqlDataSource>
-        </p>
+
+            
             <p>Change your password here</p>
         <asp:ChangePassword ID="ChangePassword1" runat="server" BackColor="#F7F6F3" BorderColor="#E6E2D8" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em">
             <CancelButtonStyle BackColor="#FFFBFF" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284775" />

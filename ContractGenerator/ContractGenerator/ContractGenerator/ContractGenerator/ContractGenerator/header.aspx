@@ -28,7 +28,7 @@
                   <li><a href="/Management/AdminPanel.aspx">Admin Panel</a></li>
                   <li><a href="/Management/CreateTemplate.aspx">Create Contract Template</a></li>
                   <li><a href="/Management/ViewTemplate.aspx">View Contract Template</a></li>
-                  <li><a href="/ViewEditSection.aspx">View/Edit Contract Section</a></li>
+                  <li><a href="/Management/ViewEditSection.aspx">View/Edit Contract Section</a></li>
                   <li><a href="/Management/CreateSection.aspx">Create New Section</a></li>
               </ul>
           </li>

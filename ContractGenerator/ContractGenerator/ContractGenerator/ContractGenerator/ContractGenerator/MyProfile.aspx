@@ -38,7 +38,7 @@
                         </tr>
                         <tr>
                             <td align="left" style="width:150px">
-                                Frist Name:
+                                First Name:
                             </td>
                             <td align="left" style="width:200px">
                                 <asp:Label ID="Label2" runat="server" Text='<%# Eval("[Frist Name]") %>' />
@@ -129,10 +129,10 @@
                         </tr>
                         <tr>
                             <td align="left" style="width: 150px">
-                                Frist Name:
+                                First Name:
                             </td>
                             <td align="left" style="width: 200px">
-                                <asp:TextBox ID="FristName" runat="server" Text='<%# Eval("[Frist Name]") %>' />
+                                <asp:TextBox ID="FirstName" runat="server" Text='<%# Eval("[Frist Name]") %>' />
                             </td>
                         </tr>
                         <tr>
