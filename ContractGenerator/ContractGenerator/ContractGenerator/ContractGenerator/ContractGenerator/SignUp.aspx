@@ -103,9 +103,6 @@
                             </table>
                         </ContentTemplate>
                     </asp:CreateUserWizardStep>
-                    <asp:WizardStep ID="SpecifyRolesStep" runat="server" Title="Specify Roles">
-                        <asp:CheckBoxList ID="RoleList" runat="server"></asp:CheckBoxList>
-                    </asp:WizardStep>
                     <asp:CompleteWizardStep runat="server">
                         <ContentTemplate>
                             <table>

@@ -38,23 +38,5 @@ namespace ContractGenerator {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.CreateUserWizardStep SignUpStep;
-        
-        /// <summary>
-        /// SpecifyRolesStep control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.WizardStep SpecifyRolesStep;
-        
-        /// <summary>
-        /// RoleList control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBoxList RoleList;
     }
 }
