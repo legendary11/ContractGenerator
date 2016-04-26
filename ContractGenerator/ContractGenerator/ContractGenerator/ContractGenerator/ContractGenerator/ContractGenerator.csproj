@@ -83,7 +83,7 @@
     </Content>
     <Content Include="bootstrap.css" />
     <Content Include="Logout.aspx" />
-    <Content Include="Management\CreateContractSections.aspx" />
+    <Content Include="Management\CreateSection.aspx" />
     <Content Include="Management\CreateTemplate.aspx" />
     <Content Include="footer.html" />
     <Content Include="ForgotPassword.aspx" />
@@ -122,6 +122,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Management\CreateSection.aspx.cs">
+      <DependentUpon>CreateSection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Management\CreateSection.aspx.designer.cs">
+      <DependentUpon>CreateSection.aspx</DependentUpon>
+    </Compile>
     <Compile Include="MasterPages\Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -145,13 +152,6 @@
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Management\CreateContractSections.aspx.cs">
-      <DependentUpon>CreateContractSections.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Management\CreateContractSections.aspx.designer.cs">
-      <DependentUpon>CreateContractSections.aspx</DependentUpon>
     </Compile>
     <Compile Include="Management\CreateTemplate.aspx.cs">
       <DependentUpon>CreateTemplate.aspx</DependentUpon>
